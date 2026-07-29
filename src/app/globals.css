@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #00FF66;
+  --color-brand-dark: #10B981;
+  --color-bg-primary: #0A0E0D;
+  --color-bg-secondary: #11171A;
+  --color-border-subtle: #1C2523;
+  --color-fg-primary: #FFFFFF;
+  --color-fg-muted: #8E9E9B;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-bg-primary);
+    color: var(--color-fg-primary);
+    font-family: var(--font-mono), monospace;
+  }
+}
+
+/* Custom Glitch Effect for images/profiles */
+.glitch-hover:hover {
+  animation: glitch 0.3s cubic-bezier(.25, .46, .45, .94) both infinite;
+  filter: contrast(120%) saturate(120%);
+}
+
+@keyframes glitch {
+  0% { transform: translate(0) }
+  20% { transform: translate(-2px, 1px) }
+  40% { transform: translate(-1px, -1px) }
+  60% { transform: translate(2px, 1px) }
+  80% { transform: translate(1px, -1px) }
+  100% { transform: translate(0) }
+}
+
+/* Custom Scrollbar for Terminal Vibe */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg-primary); 
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-subtle); 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand); 
+}
