@@ -59,7 +59,6 @@ const SCRIPT: TermLine[] = [
 
 const CHAR_DELAY = 18;   // ms per character (fast)
 const LINE_PAUSE = 120;  // ms pause between output lines
-const LOOP_INTERVAL = 20_000; // 20 seconds
 
 function TerminalAnimation() {
   const [rendered, setRendered] = useState<React.ReactNode[]>([]);
@@ -76,8 +75,7 @@ function TerminalAnimation() {
       }
     });
 
-  const run = useCallback(async () => {
-    cancelled.current = false;
+  const run = useCallback(async (runId: number) => {
     setRendered([]);
 
     for (const line of SCRIPT) {
@@ -120,7 +118,7 @@ function TerminalAnimation() {
             next.pop();
           }
           next.push(
-            <div className="text-fg-primary" key={`cmd-${final}-${Date.now()}`}>
+            <div className="text-fg-primary" key={`cmd-${final}-${runId}-${Date.now()}`}>
               {prefix} {final}
             </div>
           );
@@ -134,7 +132,7 @@ function TerminalAnimation() {
           ...prev,
           <div
             className="grid grid-cols-2 gap-2 text-fg-muted"
-            key={`grid-${Date.now()}`}
+            key={`grid-${runId}-${Date.now()}`}
           >
             {line.items.map((item) => (
               <span key={item}>{item}</span>
@@ -147,7 +145,7 @@ function TerminalAnimation() {
       if (line.type === "output-status") {
         setRendered((prev) => [
           ...prev,
-          <div className="text-fg-muted" key={`status-${Date.now()}-${line.text}`}>
+          <div className="text-fg-muted" key={`status-${runId}-${Date.now()}-${line.text}`}>
             <span className={line.color}>{line.icon}</span> {line.text}
           </div>,
         ]);
@@ -159,7 +157,7 @@ function TerminalAnimation() {
           if (cancelled.current) return;
           setRendered((prev) => [
             ...prev,
-            <div className="text-fg-muted" key={`out-${Date.now()}-${l}`}>
+            <div className="text-fg-muted" key={`out-${runId}-${Date.now()}-${l}`}>
               {l}
             </div>,
           ]);
@@ -172,7 +170,7 @@ function TerminalAnimation() {
         // show blinking prompt
         setRendered((prev) => [
           ...prev,
-          <div className="flex items-center gap-2 mt-1" key="idle-prompt">
+          <div className="flex items-center gap-2 mt-1" key={`idle-prompt-${runId}`}>
             <span className="text-brand">hoodtech@dev:~$</span>
             <span className="w-2 h-4 bg-fg-primary animate-pulse" />
           </div>,
@@ -182,14 +180,26 @@ function TerminalAnimation() {
   }, []);
 
   useEffect(() => {
-    run();
-    const interval = setInterval(() => {
-      run();
-    }, LOOP_INTERVAL);
+    cancelled.current = false;
+    let timeoutId: NodeJS.Timeout;
+    let currentRunId = 0;
+
+    const loop = async () => {
+      if (cancelled.current) return;
+      await run(currentRunId++);
+      if (cancelled.current) return;
+      
+      // Wait for 5 seconds before restarting the animation
+      timeoutId = setTimeout(() => {
+        loop();
+      }, 5000);
+    };
+
+    loop();
 
     return () => {
       cancelled.current = true;
-      clearInterval(interval);
+      clearTimeout(timeoutId);
     };
   }, [run]);
 
@@ -200,7 +210,7 @@ function TerminalAnimation() {
   }, []);
 
   return (
-    <div className="p-6 text-sm flex flex-col gap-1.5 min-h-[260px] font-mono">
+    <div className="p-6 text-sm flex flex-col gap-1.5 h-[420px] font-mono overflow-hidden">
       {rendered}
     </div>
   );

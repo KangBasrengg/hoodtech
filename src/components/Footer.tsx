@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import logo from "./img/logo.png";
 
 export default function Footer() {
   return (
@@ -8,11 +7,11 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-16">
         <div className="md:col-span-2">
           <Link href="/" className="flex items-center gap-2 text-brand font-bold mb-4">
-            <Image src={logo} alt="Hoodtech Logo" width={32} height={32} className="object-contain" />
+            <Image src="/logo.webp" alt="Hoodtech Logo" width={32} height={32} className="object-contain" />
             <span className="text-lg">hoodtech@dev:~$</span>
           </Link>
           <p className="text-fg-muted max-w-sm">
-            We write code. We ship products. We scale startups. 
+            We write code. We ship products. We scale startups.
             Digital agency based in Semarang, Indonesia specializing in scalable web and mobile applications.
           </p>
         </div>
@@ -30,10 +29,10 @@ export default function Footer() {
         <div>
           <h4 className="text-fg-primary font-bold mb-4 font-mono">./contact</h4>
           <ul className="flex flex-col gap-2 text-fg-muted text-sm font-mono">
-            <li><a href="mailto:hello@hoodtech.dev" className="hover:text-brand transition-colors">├── hello@hoodtech.dev</a></li>
+            <li><a href="mailto:hello@hoodtech.dev" className="hover:text-brand transition-colors">├── admin@hoodtech.my.id</a></li>
             <li><span className="text-border-subtle">├──</span> Kab. Semarang, ID</li>
-            <li><a href="#" className="hover:text-brand transition-colors">├── linkedin</a></li>
-            <li><a href="#" className="hover:text-brand transition-colors">└── github</a></li>
+            <li><a href="https://www.linkedin.com/in/muhammad-nuril-huda-maulani-9b2102342/" className="hover:text-brand transition-colors">├── linkedin</a></li>
+            <li><a href="https://github.com/KangBasrengg/" className="hover:text-brand transition-colors">└── github</a></li>
           </ul>
         </div>
       </div>

@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import logo from "./img/logo.png";
 
 export default function Navbar() {
   return (
@@ -8,7 +7,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 text-brand font-bold">
-          <Image src={logo} alt="Hoodtech Logo" width={28} height={28} className="object-contain" />
+          <Image src="/logo.webp" alt="Hoodtech Logo" width={28} height={28} className="object-contain" />
           <span>hoodtech@dev:~$</span>
         </Link>
 
