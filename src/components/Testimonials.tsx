@@ -1,23 +1,25 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Testimonials() {
+  const { t } = useLanguage();
   const feedbacks = [
     {
       client: "Budi S.",
       role: "CEO, TechStartup ID",
-      content: "Proses development sangat cepat dan rapi. Tim Hoodtech benar-benar paham cara scaling aplikasi di cloud.",
+      content: t("testi_1_desc"),
     },
     {
       client: "Rina M.",
       role: "Founder, Retail AI",
-      content: "Komunikasi sangat responsif. Hasil UI/UX sesuai dengan yang kita harapkan, clean dan modern.",
+      content: t("testi_2_desc"),
     },
     {
       client: "Andi K.",
       role: "CTO, FinTech Solusi",
-      content: "Kualitas kode sangat bagus. Sangat mudah bagi tim internal kami untuk maintain aplikasi setelah serah terima.",
+      content: t("testi_3_desc"),
     }
   ];
 
@@ -26,7 +28,7 @@ export default function Testimonials() {
       <div className="max-w-7xl mx-auto">
         <div className="mb-12">
           <span className="text-brand font-medium block mb-2">// client-feedback.log</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-fg-primary">Kata mereka</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-fg-primary">{t("testi_heading")}</h2>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6">

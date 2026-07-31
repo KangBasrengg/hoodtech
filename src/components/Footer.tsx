@@ -1,7 +1,11 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Footer() {
+  const { t } = useLanguage();
   return (
     <footer className="bg-bg-primary pt-20 pb-10 px-6 border-t border-border-subtle">
       <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-16">
@@ -11,8 +15,7 @@ export default function Footer() {
             <span className="text-lg">hoodtech@dev:~$</span>
           </Link>
           <p className="text-fg-muted max-w-sm">
-            We write code. We ship products. We scale startups.
-            Digital agency based in Semarang, Indonesia specializing in scalable web and mobile applications.
+            {t("footer_desc")}
           </p>
         </div>
 
@@ -29,7 +32,7 @@ export default function Footer() {
         <div>
           <h4 className="text-fg-primary font-bold mb-4 font-mono">./contact</h4>
           <ul className="flex flex-col gap-2 text-fg-muted text-sm font-mono">
-            <li><a href="mailto:hello@hoodtech.dev" className="hover:text-brand transition-colors">├── admin@hoodtech.my.id</a></li>
+            <li><a href="mailto:admin@hoodtech.my.id" className="hover:text-brand transition-colors">├── admin@hoodtech.my.id</a></li>
             <li><span className="text-border-subtle">├──</span> Kab. Semarang, ID</li>
             <li><a href="https://www.linkedin.com/in/muhammad-nuril-huda-maulani-9b2102342/" className="hover:text-brand transition-colors">├── linkedin</a></li>
             <li><a href="https://github.com/KangBasrengg/" className="hover:text-brand transition-colors">└── github</a></li>

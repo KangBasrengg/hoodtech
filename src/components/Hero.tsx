@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import { useState, useEffect, useCallback, useRef } from "react";
+import { useLanguage } from "@/context/LanguageContext";
 
 // ── Terminal typing animation ──────────────────────────────────────
 type TermLine =
@@ -218,6 +219,8 @@ function TerminalAnimation() {
 
 // ── Hero Component ─────────────────────────────────────────────────
 export default function Hero() {
+  const { t } = useLanguage();
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -249,9 +252,9 @@ export default function Hero() {
           </motion.div>
 
           <motion.div variants={itemVariants} className="text-5xl md:text-6xl font-bold leading-tight">
-            <h1 className="text-fg-primary">We write code.</h1>
-            <h1 className="text-fg-muted">We ship products.</h1>
-            <h1 className="text-fg-muted">We scale startups.</h1>
+            <h1 className="text-fg-primary">{t("hero_title_1")}</h1>
+            <h1 className="text-fg-muted">{t("hero_title_2")}</h1>
+            <h1 className="text-fg-muted">{t("hero_title_3")}</h1>
           </motion.div>
 
           <motion.div variants={itemVariants} className="flex flex-wrap items-center gap-4 mt-4">

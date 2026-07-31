@@ -108,7 +108,7 @@ export default function InteractiveTerminal() {
         response = (
           <div className="flex flex-col md:flex-row gap-4 mt-2 mb-2">
             <pre className="text-brand font-mono text-[10px] sm:text-[11px] leading-tight font-bold">
-{` _   _                 _ _            _     
+              {` _   _                 _ _            _     
 | | | |               | | |          | |    
 | |_| | ___   ___   __| | |_ ___  ___| |__  
 |  _  |/ _ \\ / _ \\ / _\` | __/ _ \\/ __| '_ \\ 
@@ -217,9 +217,9 @@ export default function InteractiveTerminal() {
                     transition={{ duration: 0.2 }}
                     key={i}
                     className={`${line.type === 'system' ? 'text-fg-muted whitespace-pre-wrap' :
-                        line.type === 'error' ? 'text-red-400' :
-                          line.type === 'user' ? 'text-white font-semibold mt-2' :
-                            line.type === 'ascii' ? 'text-brand' : 'text-fg-muted'
+                      line.type === 'error' ? 'text-red-400' :
+                        line.type === 'user' ? 'text-white font-semibold mt-2' :
+                          line.type === 'ascii' ? 'text-brand' : 'text-fg-muted'
                       }`}
                   >
                     {line.content}

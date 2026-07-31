@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { 
-  SiReact, SiNextdotjs, SiVuedotjs, SiTailwindcss, SiFramer, 
+import {
+  SiReact, SiNextdotjs, SiVuedotjs, SiTailwindcss, SiFramer,
   SiNodedotjs, SiExpress, SiNestjs, SiLaravel, SiGo, SiPython,
   SiPostgresql, SiMysql, SiMongodb, SiRedis,
   SiDocker, SiGooglecloud, SiVercel, SiGit, SiGithubactions
@@ -39,7 +39,7 @@ export default function TechStack() {
       <div className="max-w-4xl mx-auto text-center">
         <div className="mb-12">
           <span className="text-brand font-medium block mb-2">$ cat package.json</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-fg-primary">Tech stack kami</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-fg-primary">Tech stack</h2>
         </div>
 
         <div className="relative overflow-hidden flex w-full max-w-full">

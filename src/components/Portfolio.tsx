@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ExternalLink, ChevronLeft, ChevronRight, Pause, Play } from "lucide-react";
 import Link from "next/link";
 import { useState, useEffect, useCallback } from "react";
+import { useLanguage } from "@/context/LanguageContext";
 
 const projects = [
   {
@@ -47,6 +48,7 @@ const projects = [
 const AUTO_INTERVAL = 6000; // 6 seconds per card
 
 export default function Portfolio() {
+  const { t } = useLanguage();
   const [current, setCurrent] = useState(0);
   const [direction, setDirection] = useState(1); // 1 = next, -1 = prev
   const [isPaused, setIsPaused] = useState(false);
@@ -102,7 +104,7 @@ export default function Portfolio() {
             $ git clone hoodtech/portfolio.git
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-fg-primary">
-            Proyek terbaru
+            {t("portfolio_heading")}
           </h2>
         </div>
 
@@ -147,21 +149,21 @@ export default function Portfolio() {
                         {project.title}
                       </h3>
                       <p className="text-fg-muted leading-relaxed mb-6">
-                        {project.desc}
+                        {t(`proj_${current + 1}_desc` as any)}
                       </p>
 
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                         <div className="bg-bg-primary border border-border-subtle p-3 rounded-md">
                           <div className="text-xs text-brand font-mono mb-1">{"<Problem />"}</div>
-                          <div className="text-sm text-fg-muted leading-relaxed">{project.problem}</div>
+                          <div className="text-sm text-fg-muted leading-relaxed">{t(`proj_${current + 1}_prob` as any)}</div>
                         </div>
                         <div className="bg-bg-primary border border-border-subtle p-3 rounded-md">
                           <div className="text-xs text-brand font-mono mb-1">{"<Solution />"}</div>
-                          <div className="text-sm text-fg-muted leading-relaxed">{project.solution}</div>
+                          <div className="text-sm text-fg-muted leading-relaxed">{t(`proj_${current + 1}_sol` as any)}</div>
                         </div>
                         <div className="bg-bg-primary border border-border-subtle p-3 rounded-md md:col-span-2">
                           <div className="text-xs text-brand font-mono mb-1">{"<Impact />"}</div>
-                          <div className="text-sm text-fg-primary leading-relaxed">{project.impact}</div>
+                          <div className="text-sm text-fg-primary leading-relaxed">{t(`proj_${current + 1}_imp` as any)}</div>
                         </div>
                       </div>
 
@@ -183,7 +185,7 @@ export default function Portfolio() {
                         className="inline-flex h-11 items-center justify-center gap-2 bg-brand text-bg-primary px-6 font-bold rounded-md hover:bg-brand-dark transition-colors text-sm"
                       >
                         <ExternalLink size={16} />
-                        Lihat Live Demo
+                        {t("portfolio_live_demo")}
                       </Link>
                     </div>
 

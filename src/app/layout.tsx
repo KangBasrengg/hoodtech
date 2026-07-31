@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import { LanguageProvider } from "@/context/LanguageContext";
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -50,7 +51,9 @@ export default function RootLayout({
         className={`${jetbrainsMono.variable} font-mono antialiased`}
         suppressHydrationWarning
       >
-        {children}
+        <LanguageProvider>
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   );

@@ -3,10 +3,13 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { Send, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
 import { useState, useRef } from "react";
+import { FaWhatsapp, FaEnvelope } from "react-icons/fa";
+import { useLanguage } from "@/context/LanguageContext";
 
 type FormState = "idle" | "sending" | "success" | "error";
 
 export default function CTA() {
+  const { t } = useLanguage();
   const [formState, setFormState] = useState<FormState>("idle");
   const [errorMsg, setErrorMsg] = useState("");
   const formRef = useRef<HTMLFormElement>(null);
@@ -63,11 +66,10 @@ export default function CTA() {
             $ npm run contact
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-fg-primary">
-            Mulai proyek bersama kami
+            {t("cta_heading")}
           </h2>
           <p className="text-fg-muted mt-3 max-w-xl">
-            Isi form di bawah ini untuk memulai diskusi. Tim kami akan merespons
-            dalam waktu kurang dari 24 jam.
+            {t("cta_desc")}
           </p>
         </div>
 
@@ -106,14 +108,12 @@ export default function CTA() {
                   >
                     <CheckCircle className="w-16 h-16 text-brand mb-4" />
                     <h3 className="text-xl font-bold text-fg-primary mb-2">
-                      Pesan terkirim!
+                      {t("cta_success_heading")}
                     </h3>
                     <p className="text-fg-muted text-sm font-mono">
-                      <span className="text-brand">✔</span> Message sent
-                      successfully.
+                      <span className="text-brand">✔</span> {t("cta_success_1")}
                       <br />
-                      <span className="text-brand">✔</span> We will reply
-                      within 24 hours.
+                      <span className="text-brand">✔</span> {t("cta_success_2")}
                     </p>
                   </motion.div>
                 ) : (
@@ -139,7 +139,7 @@ export default function CTA() {
                           value={form.name}
                           onChange={handleChange}
                           required
-                          placeholder="Muhammad Nuril"
+                          placeholder={t("cta_placeholder_name")}
                           className="bg-bg-secondary border border-border-subtle rounded-md h-11 px-4 text-fg-primary text-sm font-mono focus:outline-none focus:border-brand transition-colors placeholder:text-fg-muted/40"
                         />
                       </div>
@@ -172,7 +172,7 @@ export default function CTA() {
                           onChange={handleChange}
                           className="bg-bg-secondary border border-border-subtle rounded-md h-11 px-4 text-fg-primary text-sm font-mono focus:outline-none focus:border-brand transition-colors appearance-none cursor-pointer"
                         >
-                          <option value="">-- pilih --</option>
+                          <option value="">{t("cta_select_default")}</option>
                           <option value="Web Application">Web Application</option>
                           <option value="Mobile Application">Mobile Application</option>
                           <option value="Backend / API">Backend / API</option>
@@ -192,12 +192,12 @@ export default function CTA() {
                           onChange={handleChange}
                           className="bg-bg-secondary border border-border-subtle rounded-md h-11 px-4 text-fg-primary text-sm font-mono focus:outline-none focus:border-brand transition-colors appearance-none cursor-pointer"
                         >
-                          <option value="">-- pilih --</option>
-                          <option value="< Rp 5 juta">{"< Rp 5 juta"}</option>
-                          <option value="Rp 5 - 15 juta">Rp 5 - 15 juta</option>
-                          <option value="Rp 15 - 50 juta">Rp 15 - 50 juta</option>
-                          <option value="Rp 50 - 100 juta">Rp 50 - 100 juta</option>
-                          <option value="> Rp 100 juta">{"> Rp 100 juta"}</option>
+                          <option value="">{t("cta_select_default")}</option>
+                          <option value={t("budget_1") as any}>{t("budget_1")}</option>
+                          <option value={t("budget_2") as any}>{t("budget_2")}</option>
+                          <option value={t("budget_3") as any}>{t("budget_3")}</option>
+                          <option value={t("budget_4") as any}>{t("budget_4")}</option>
+                          <option value={t("budget_5") as any}>{t("budget_5")}</option>
                         </select>
                       </div>
                     </div>
@@ -214,7 +214,7 @@ export default function CTA() {
                         onChange={handleChange}
                         required
                         rows={5}
-                        placeholder="Ceritakan tentang proyek Anda..."
+                        placeholder={t("cta_placeholder_msg")}
                         className="bg-bg-secondary border border-border-subtle rounded-md p-4 text-fg-primary text-sm font-mono focus:outline-none focus:border-brand transition-colors resize-none placeholder:text-fg-muted/40"
                       />
                     </div>
@@ -243,7 +243,7 @@ export default function CTA() {
                       {formState === "sending" ? (
                         <>
                           <Loader2 className="w-4 h-4 animate-spin" />
-                          Mengirim...
+                          {t("cta_btn_sending")}
                         </>
                       ) : (
                         <>
@@ -273,7 +273,7 @@ export default function CTA() {
               </div>
               <div className="text-3xl font-bold text-brand mb-1">{"< 24h"}</div>
               <div className="text-fg-muted text-sm">
-                Rata-rata waktu respons kami untuk pesan masuk baru.
+                {t("cta_response_desc")}
               </div>
             </div>
 
@@ -287,7 +287,7 @@ export default function CTA() {
                   <span className="text-fg-muted">location:</span>
                   <br />
                   <span className="text-fg-primary ml-4">
-                    &quot;Kab. Semarang, ID&quot;
+                    &quot;{t("cta_location_city")}&quot;
                   </span>
                 </div>
                 <div>
@@ -300,9 +300,32 @@ export default function CTA() {
                 <div>
                   <span className="text-fg-muted">channels:</span>
                   <br />
-                  <span className="text-fg-primary ml-4">
-                    [&quot;Email&quot;, &quot;WhatsApp&quot;]
-                  </span>
+                  <div className="text-fg-primary ml-4 flex items-center gap-3 mt-2">
+                    [
+                    <a
+                      href="#"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        // Email di-encode base64 agar tidak mudah terscan oleh bot scraper
+                        window.location.href = `mailto:${atob("bXVoYW1tYWRudXJpbDE1NUBnbWFpbC5jb20=")}`;
+                      }}
+                      className="hover:text-brand transition-colors"
+                      title="Email"
+                    >
+                      <FaEnvelope className="w-5 h-5 inline-block" />
+                    </a>
+                    ,
+                    <a
+                      href="https://shorturl.at/TeegY"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-[#25D366] transition-colors"
+                      title="WhatsApp"
+                    >
+                      <FaWhatsapp className="w-5 h-5 inline-block" />
+                    </a>
+                    ]
+                  </div>
                 </div>
               </div>
             </div>
@@ -314,10 +337,10 @@ export default function CTA() {
               </div>
               <ul className="flex flex-col gap-2">
                 {[
-                  "Konsultasi awal gratis",
-                  "Proposal & estimasi harga",
-                  "Timeline yang transparan",
-                  "NDA jika diperlukan",
+                  t("cta_checklist_1"),
+                  t("cta_checklist_2"),
+                  t("cta_checklist_3"),
+                  t("cta_checklist_4"),
                 ].map((item) => (
                   <li key={item} className="flex items-center gap-2 text-fg-primary">
                     <span className="text-brand">✔</span>

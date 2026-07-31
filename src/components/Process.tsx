@@ -1,8 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Process() {
+  const { t } = useLanguage();
   const steps = [
     { commit: "a1b2c3d", message: "init: project discovery & requirements gathering" },
     { commit: "e4f5g6h", message: "feat: wireframing and UI/UX design" },
@@ -17,7 +19,7 @@ export default function Process() {
       <div className="max-w-4xl mx-auto">
         <div className="mb-12">
           <span className="text-brand font-medium block mb-2">$ git log --oneline --graph</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-fg-primary">Alur kerja kami</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-fg-primary">{t("process_heading")}</h2>
         </div>
 
         <div className="relative pl-4 md:pl-0">
