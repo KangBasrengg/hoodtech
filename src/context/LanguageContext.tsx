@@ -47,6 +47,7 @@ export const dictionary = {
     about_check_2: "Fokus pada performa, keamanan, dan skalabilitas.",
     about_check_3: "Desain antarmuka (UI/UX) yang intuitif dan berpusat pada pengguna.",
     about_check_4: "Kolaborasi yang transparan dan komunikasi yang responsif.",
+    about_founders_heading: "siapa dibalik Hoodtech?",
 
     // Process
     process_heading: "Alur kerja kami",
@@ -121,6 +122,7 @@ export const dictionary = {
     about_check_2: "Focus on performance, security, and scalability.",
     about_check_3: "Intuitive and user-centric interface (UI/UX) design.",
     about_check_4: "Transparent collaboration and responsive communication.",
+    about_founders_heading: "who is behind Hoodtech?",
 
     // Process
     process_heading: "Our workflow",
