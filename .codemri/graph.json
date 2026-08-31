@@ -1,0 +1,1127 @@
+{
+  "graph_id": "nrg-genesis-01",
+  "repo_root": "D:\\Project Code\\Hoodtech",
+  "version": "v1.0.0",
+  "nodes": {
+    "class:D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx:LanguageContextType": {
+      "id": "class:D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx:LanguageContextType",
+      "type": "CLASS",
+      "name": "LanguageContextType",
+      "path": "D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx",
+      "start_line": 161,
+      "end_line": 161,
+      "metadata": {
+        "lang": "typescript"
+      },
+      "created_at": "2026-08-05T16:10:59.7129101+07:00"
+    },
+    "file:D:\\Project Code\\Hoodtech\\eslint.config.mjs": {
+      "id": "file:D:\\Project Code\\Hoodtech\\eslint.config.mjs",
+      "type": "FILE",
+      "name": "eslint.config.mjs",
+      "path": "D:\\Project Code\\Hoodtech\\eslint.config.mjs",
+      "start_line": 1,
+      "end_line": 19,
+      "metadata": {
+        "lang": "javascript"
+      },
+      "created_at": "2026-08-05T16:10:59.7043475+07:00"
+    },
+    "file:D:\\Project Code\\Hoodtech\\next-env.d.ts": {
+      "id": "file:D:\\Project Code\\Hoodtech\\next-env.d.ts",
+      "type": "FILE",
+      "name": "next-env.d.ts",
+      "path": "D:\\Project Code\\Hoodtech\\next-env.d.ts",
+      "start_line": 1,
+      "end_line": 7,
+      "metadata": {
+        "lang": "typescript"
+      },
+      "created_at": "2026-08-05T16:10:59.7043475+07:00"
+    },
+    "file:D:\\Project Code\\Hoodtech\\next.config.js": {
+      "id": "file:D:\\Project Code\\Hoodtech\\next.config.js",
+      "type": "FILE",
+      "name": "next.config.js",
+      "path": "D:\\Project Code\\Hoodtech\\next.config.js",
+      "start_line": 1,
+      "end_line": 7,
+      "metadata": {
+        "lang": "javascript"
+      },
+      "created_at": "2026-08-05T16:10:59.7037013+07:00"
+    },
+    "file:D:\\Project Code\\Hoodtech\\next.config.ts": {
+      "id": "file:D:\\Project Code\\Hoodtech\\next.config.ts",
+      "type": "FILE",
+      "name": "next.config.ts",
+      "path": "D:\\Project Code\\Hoodtech\\next.config.ts",
+      "start_line": 1,
+      "end_line": 8,
+      "metadata": {
+        "lang": "typescript"
+      },
+      "created_at": "2026-08-05T16:10:59.7043475+07:00"
+    },
+    "file:D:\\Project Code\\Hoodtech\\postcss.config.mjs": {
+      "id": "file:D:\\Project Code\\Hoodtech\\postcss.config.mjs",
+      "type": "FILE",
+      "name": "postcss.config.mjs",
+      "path": "D:\\Project Code\\Hoodtech\\postcss.config.mjs",
+      "start_line": 1,
+      "end_line": 8,
+      "metadata": {
+        "lang": "javascript"
+      },
+      "created_at": "2026-08-05T16:10:59.7048826+07:00"
+    },
+    "file:D:\\Project Code\\Hoodtech\\server.js": {
+      "id": "file:D:\\Project Code\\Hoodtech\\server.js",
+      "type": "FILE",
+      "name": "server.js",
+      "path": "D:\\Project Code\\Hoodtech\\server.js",
+      "start_line": 1,
+      "end_line": 38,
+      "metadata": {
+        "lang": "javascript"
+      },
+      "created_at": "2026-08-05T16:10:59.7053988+07:00"
+    },
+    "file:D:\\Project Code\\Hoodtech\\src\\app\\api\\contact\\route.ts": {
+      "id": "file:D:\\Project Code\\Hoodtech\\src\\app\\api\\contact\\route.ts",
+      "type": "FILE",
+      "name": "route.ts",
+      "path": "D:\\Project Code\\Hoodtech\\src\\app\\api\\contact\\route.ts",
+      "start_line": 1,
+      "end_line": 83,
+      "metadata": {
+        "lang": "typescript"
+      },
+      "created_at": "2026-08-05T16:10:59.7053988+07:00"
+    },
+    "file:D:\\Project Code\\Hoodtech\\src\\app\\layout.tsx": {
+      "id": "file:D:\\Project Code\\Hoodtech\\src\\app\\layout.tsx",
+      "type": "FILE",
+      "name": "layout.tsx",
+      "path": "D:\\Project Code\\Hoodtech\\src\\app\\layout.tsx",
+      "start_line": 1,
+      "end_line": 61,
+      "metadata": {
+        "lang": "typescript"
+      },
+      "created_at": "2026-08-05T16:10:59.7053988+07:00"
+    },
+    "file:D:\\Project Code\\Hoodtech\\src\\app\\page.tsx": {
+      "id": "file:D:\\Project Code\\Hoodtech\\src\\app\\page.tsx",
+      "type": "FILE",
+      "name": "page.tsx",
+      "path": "D:\\Project Code\\Hoodtech\\src\\app\\page.tsx",
+      "start_line": 1,
+      "end_line": 32,
+      "metadata": {
+        "lang": "typescript"
+      },
+      "created_at": "2026-08-05T16:10:59.7053988+07:00"
+    },
+    "file:D:\\Project Code\\Hoodtech\\src\\app\\robots.ts": {
+      "id": "file:D:\\Project Code\\Hoodtech\\src\\app\\robots.ts",
+      "type": "FILE",
+      "name": "robots.ts",
+      "path": "D:\\Project Code\\Hoodtech\\src\\app\\robots.ts",
+      "start_line": 1,
+      "end_line": 12,
+      "metadata": {
+        "lang": "typescript"
+      },
+      "created_at": "2026-08-05T16:10:59.7053988+07:00"
+    },
+    "file:D:\\Project Code\\Hoodtech\\src\\app\\sitemap.ts": {
+      "id": "file:D:\\Project Code\\Hoodtech\\src\\app\\sitemap.ts",
+      "type": "FILE",
+      "name": "sitemap.ts",
+      "path": "D:\\Project Code\\Hoodtech\\src\\app\\sitemap.ts",
+      "start_line": 1,
+      "end_line": 13,
+      "metadata": {
+        "lang": "typescript"
+      },
+      "created_at": "2026-08-05T16:10:59.7053988+07:00"
+    },
+    "file:D:\\Project Code\\Hoodtech\\src\\components\\About.tsx": {
+      "id": "file:D:\\Project Code\\Hoodtech\\src\\components\\About.tsx",
+      "type": "FILE",
+      "name": "About.tsx",
+      "path": "D:\\Project Code\\Hoodtech\\src\\components\\About.tsx",
+      "start_line": 1,
+      "end_line": 291,
+      "metadata": {
+        "lang": "typescript"
+      },
+      "created_at": "2026-08-05T16:10:59.7102868+07:00"
+    },
+    "file:D:\\Project Code\\Hoodtech\\src\\components\\CTA.tsx": {
+      "id": "file:D:\\Project Code\\Hoodtech\\src\\components\\CTA.tsx",
+      "type": "FILE",
+      "name": "CTA.tsx",
+      "path": "D:\\Project Code\\Hoodtech\\src\\components\\CTA.tsx",
+      "start_line": 1,
+      "end_line": 358,
+      "metadata": {
+        "lang": "typescript"
+      },
+      "created_at": "2026-08-05T16:10:59.7097745+07:00"
+    },
+    "file:D:\\Project Code\\Hoodtech\\src\\components\\Footer.tsx": {
+      "id": "file:D:\\Project Code\\Hoodtech\\src\\components\\Footer.tsx",
+      "type": "FILE",
+      "name": "Footer.tsx",
+      "path": "D:\\Project Code\\Hoodtech\\src\\components\\Footer.tsx",
+      "start_line": 1,
+      "end_line": 51,
+      "metadata": {
+        "lang": "typescript"
+      },
+      "created_at": "2026-08-05T16:10:59.7102868+07:00"
+    },
+    "file:D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx": {
+      "id": "file:D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx",
+      "type": "FILE",
+      "name": "Hero.tsx",
+      "path": "D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx",
+      "start_line": 1,
+      "end_line": 301,
+      "metadata": {
+        "lang": "typescript"
+      },
+      "created_at": "2026-08-05T16:10:59.7097745+07:00"
+    },
+    "file:D:\\Project Code\\Hoodtech\\src\\components\\InteractiveTerminal.tsx": {
+      "id": "file:D:\\Project Code\\Hoodtech\\src\\components\\InteractiveTerminal.tsx",
+      "type": "FILE",
+      "name": "InteractiveTerminal.tsx",
+      "path": "D:\\Project Code\\Hoodtech\\src\\components\\InteractiveTerminal.tsx",
+      "start_line": 1,
+      "end_line": 253,
+      "metadata": {
+        "lang": "typescript"
+      },
+      "created_at": "2026-08-05T16:10:59.7102868+07:00"
+    },
+    "file:D:\\Project Code\\Hoodtech\\src\\components\\Navbar.tsx": {
+      "id": "file:D:\\Project Code\\Hoodtech\\src\\components\\Navbar.tsx",
+      "type": "FILE",
+      "name": "Navbar.tsx",
+      "path": "D:\\Project Code\\Hoodtech\\src\\components\\Navbar.tsx",
+      "start_line": 1,
+      "end_line": 50,
+      "metadata": {
+        "lang": "typescript"
+      },
+      "created_at": "2026-08-05T16:10:59.7102868+07:00"
+    },
+    "file:D:\\Project Code\\Hoodtech\\src\\components\\Portfolio.tsx": {
+      "id": "file:D:\\Project Code\\Hoodtech\\src\\components\\Portfolio.tsx",
+      "type": "FILE",
+      "name": "Portfolio.tsx",
+      "path": "D:\\Project Code\\Hoodtech\\src\\components\\Portfolio.tsx",
+      "start_line": 1,
+      "end_line": 321,
+      "metadata": {
+        "lang": "typescript"
+      },
+      "created_at": "2026-08-05T16:10:59.7108233+07:00"
+    },
+    "file:D:\\Project Code\\Hoodtech\\src\\components\\Process.tsx": {
+      "id": "file:D:\\Project Code\\Hoodtech\\src\\components\\Process.tsx",
+      "type": "FILE",
+      "name": "Process.tsx",
+      "path": "D:\\Project Code\\Hoodtech\\src\\components\\Process.tsx",
+      "start_line": 1,
+      "end_line": 57,
+      "metadata": {
+        "lang": "typescript"
+      },
+      "created_at": "2026-08-05T16:10:59.7108233+07:00"
+    },
+    "file:D:\\Project Code\\Hoodtech\\src\\components\\Services.tsx": {
+      "id": "file:D:\\Project Code\\Hoodtech\\src\\components\\Services.tsx",
+      "type": "FILE",
+      "name": "Services.tsx",
+      "path": "D:\\Project Code\\Hoodtech\\src\\components\\Services.tsx",
+      "start_line": 1,
+      "end_line": 101,
+      "metadata": {
+        "lang": "typescript"
+      },
+      "created_at": "2026-08-05T16:10:59.7108233+07:00"
+    },
+    "file:D:\\Project Code\\Hoodtech\\src\\components\\StatsBar.tsx": {
+      "id": "file:D:\\Project Code\\Hoodtech\\src\\components\\StatsBar.tsx",
+      "type": "FILE",
+      "name": "StatsBar.tsx",
+      "path": "D:\\Project Code\\Hoodtech\\src\\components\\StatsBar.tsx",
+      "start_line": 1,
+      "end_line": 22,
+      "metadata": {
+        "lang": "typescript"
+      },
+      "created_at": "2026-08-05T16:10:59.7113498+07:00"
+    },
+    "file:D:\\Project Code\\Hoodtech\\src\\components\\TechStack.tsx": {
+      "id": "file:D:\\Project Code\\Hoodtech\\src\\components\\TechStack.tsx",
+      "type": "FILE",
+      "name": "TechStack.tsx",
+      "path": "D:\\Project Code\\Hoodtech\\src\\components\\TechStack.tsx",
+      "start_line": 1,
+      "end_line": 78,
+      "metadata": {
+        "lang": "typescript"
+      },
+      "created_at": "2026-08-05T16:10:59.7113498+07:00"
+    },
+    "file:D:\\Project Code\\Hoodtech\\src\\components\\Testimonials.tsx": {
+      "id": "file:D:\\Project Code\\Hoodtech\\src\\components\\Testimonials.tsx",
+      "type": "FILE",
+      "name": "Testimonials.tsx",
+      "path": "D:\\Project Code\\Hoodtech\\src\\components\\Testimonials.tsx",
+      "start_line": 1,
+      "end_line": 68,
+      "metadata": {
+        "lang": "typescript"
+      },
+      "created_at": "2026-08-05T16:10:59.7118644+07:00"
+    },
+    "file:D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx": {
+      "id": "file:D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx",
+      "type": "FILE",
+      "name": "LanguageContext.tsx",
+      "path": "D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx",
+      "start_line": 1,
+      "end_line": 194,
+      "metadata": {
+        "lang": "typescript"
+      },
+      "created_at": "2026-08-05T16:10:59.7123873+07:00"
+    },
+    "file:D:\\Project Code\\Hoodtech\\src\\lib\\utils.ts": {
+      "id": "file:D:\\Project Code\\Hoodtech\\src\\lib\\utils.ts",
+      "type": "FILE",
+      "name": "utils.ts",
+      "path": "D:\\Project Code\\Hoodtech\\src\\lib\\utils.ts",
+      "start_line": 1,
+      "end_line": 7,
+      "metadata": {
+        "lang": "typescript"
+      },
+      "created_at": "2026-08-05T16:10:59.7123873+07:00"
+    },
+    "file:D:\\Project Code\\Hoodtech\\startup.js": {
+      "id": "file:D:\\Project Code\\Hoodtech\\startup.js",
+      "type": "FILE",
+      "name": "startup.js",
+      "path": "D:\\Project Code\\Hoodtech\\startup.js",
+      "start_line": 1,
+      "end_line": 3,
+      "metadata": {
+        "lang": "javascript"
+      },
+      "created_at": "2026-08-05T16:10:59.7123873+07:00"
+    },
+    "fn:D:\\Project Code\\Hoodtech\\src\\app\\api\\contact\\route.ts:POST": {
+      "id": "fn:D:\\Project Code\\Hoodtech\\src\\app\\api\\contact\\route.ts:POST",
+      "type": "FUNCTION",
+      "name": "POST",
+      "path": "D:\\Project Code\\Hoodtech\\src\\app\\api\\contact\\route.ts",
+      "start_line": 3,
+      "end_line": 3,
+      "metadata": {
+        "lang": "typescript"
+      },
+      "created_at": "2026-08-05T16:10:59.7053988+07:00"
+    },
+    "fn:D:\\Project Code\\Hoodtech\\src\\components\\CTA.tsx:handleChange": {
+      "id": "fn:D:\\Project Code\\Hoodtech\\src\\components\\CTA.tsx:handleChange",
+      "type": "FUNCTION",
+      "name": "handleChange",
+      "path": "D:\\Project Code\\Hoodtech\\src\\components\\CTA.tsx",
+      "start_line": 25,
+      "end_line": 25,
+      "metadata": {
+        "lang": "typescript"
+      },
+      "created_at": "2026-08-05T16:10:59.7134216+07:00"
+    },
+    "fn:D:\\Project Code\\Hoodtech\\src\\components\\CTA.tsx:handleSubmit": {
+      "id": "fn:D:\\Project Code\\Hoodtech\\src\\components\\CTA.tsx:handleSubmit",
+      "type": "FUNCTION",
+      "name": "handleSubmit",
+      "path": "D:\\Project Code\\Hoodtech\\src\\components\\CTA.tsx",
+      "start_line": 31,
+      "end_line": 31,
+      "metadata": {
+        "lang": "typescript"
+      },
+      "created_at": "2026-08-05T16:10:59.7134216+07:00"
+    },
+    "fn:D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx:TerminalAnimation": {
+      "id": "fn:D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx:TerminalAnimation",
+      "type": "FUNCTION",
+      "name": "TerminalAnimation",
+      "path": "D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx",
+      "start_line": 64,
+      "end_line": 64,
+      "metadata": {
+        "lang": "typescript"
+      },
+      "created_at": "2026-08-05T16:10:59.7113498+07:00"
+    },
+    "fn:D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx:loop": {
+      "id": "fn:D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx:loop",
+      "type": "FUNCTION",
+      "name": "loop",
+      "path": "D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx",
+      "start_line": 188,
+      "end_line": 188,
+      "metadata": {
+        "lang": "typescript"
+      },
+      "created_at": "2026-08-05T16:10:59.7113498+07:00"
+    },
+    "fn:D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx:prefix": {
+      "id": "fn:D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx:prefix",
+      "type": "FUNCTION",
+      "name": "prefix",
+      "path": "D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx",
+      "start_line": 87,
+      "end_line": 87,
+      "metadata": {
+        "lang": "typescript"
+      },
+      "created_at": "2026-08-05T16:10:59.7113498+07:00"
+    },
+    "fn:D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx:sleep": {
+      "id": "fn:D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx:sleep",
+      "type": "FUNCTION",
+      "name": "sleep",
+      "path": "D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx",
+      "start_line": 69,
+      "end_line": 69,
+      "metadata": {
+        "lang": "typescript"
+      },
+      "created_at": "2026-08-05T16:10:59.7113498+07:00"
+    },
+    "fn:D:\\Project Code\\Hoodtech\\src\\components\\InteractiveTerminal.tsx:handleCommand": {
+      "id": "fn:D:\\Project Code\\Hoodtech\\src\\components\\InteractiveTerminal.tsx:handleCommand",
+      "type": "FUNCTION",
+      "name": "handleCommand",
+      "path": "D:\\Project Code\\Hoodtech\\src\\components\\InteractiveTerminal.tsx",
+      "start_line": 54,
+      "end_line": 54,
+      "metadata": {
+        "lang": "typescript"
+      },
+      "created_at": "2026-08-05T16:10:59.7118644+07:00"
+    },
+    "fn:D:\\Project Code\\Hoodtech\\src\\components\\InteractiveTerminal.tsx:onSubmit": {
+      "id": "fn:D:\\Project Code\\Hoodtech\\src\\components\\InteractiveTerminal.tsx:onSubmit",
+      "type": "FUNCTION",
+      "name": "onSubmit",
+      "path": "D:\\Project Code\\Hoodtech\\src\\components\\InteractiveTerminal.tsx",
+      "start_line": 157,
+      "end_line": 157,
+      "metadata": {
+        "lang": "typescript"
+      },
+      "created_at": "2026-08-05T16:10:59.7118644+07:00"
+    },
+    "fn:D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx:LanguageProvider": {
+      "id": "fn:D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx:LanguageProvider",
+      "type": "FUNCTION",
+      "name": "LanguageProvider",
+      "path": "D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx",
+      "start_line": 169,
+      "end_line": 169,
+      "metadata": {
+        "lang": "typescript"
+      },
+      "created_at": "2026-08-05T16:10:59.7129101+07:00"
+    },
+    "fn:D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx:t": {
+      "id": "fn:D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx:t",
+      "type": "FUNCTION",
+      "name": "t",
+      "path": "D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx",
+      "start_line": 176,
+      "end_line": 176,
+      "metadata": {
+        "lang": "typescript"
+      },
+      "created_at": "2026-08-05T16:10:59.7129101+07:00"
+    },
+    "fn:D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx:toggleLang": {
+      "id": "fn:D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx:toggleLang",
+      "type": "FUNCTION",
+      "name": "toggleLang",
+      "path": "D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx",
+      "start_line": 172,
+      "end_line": 172,
+      "metadata": {
+        "lang": "typescript"
+      },
+      "created_at": "2026-08-05T16:10:59.7129101+07:00"
+    },
+    "fn:D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx:useLanguage": {
+      "id": "fn:D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx:useLanguage",
+      "type": "FUNCTION",
+      "name": "useLanguage",
+      "path": "D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx",
+      "start_line": 187,
+      "end_line": 187,
+      "metadata": {
+        "lang": "typescript"
+      },
+      "created_at": "2026-08-05T16:10:59.7129101+07:00"
+    },
+    "fn:D:\\Project Code\\Hoodtech\\src\\lib\\utils.ts:cn": {
+      "id": "fn:D:\\Project Code\\Hoodtech\\src\\lib\\utils.ts:cn",
+      "type": "FUNCTION",
+      "name": "cn",
+      "path": "D:\\Project Code\\Hoodtech\\src\\lib\\utils.ts",
+      "start_line": 4,
+      "end_line": 4,
+      "metadata": {
+        "lang": "typescript"
+      },
+      "created_at": "2026-08-05T16:10:59.7123873+07:00"
+    }
+  },
+  "edges": [
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\next.config.ts:imports:mod:next",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\next.config.ts",
+      "target_id": "mod:next",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module next"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\next-env.d.ts:imports:mod:./.next/dev/types/routes.d.ts",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\next-env.d.ts",
+      "target_id": "mod:./.next/dev/types/routes.d.ts",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module ./.next/dev/types/routes.d.ts"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\eslint.config.mjs:imports:mod:eslint/config",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\eslint.config.mjs",
+      "target_id": "mod:eslint/config",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module eslint/config"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\eslint.config.mjs:imports:mod:eslint-config-next/core-web-vitals",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\eslint.config.mjs",
+      "target_id": "mod:eslint-config-next/core-web-vitals",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module eslint-config-next/core-web-vitals"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\eslint.config.mjs:imports:mod:eslint-config-next/typescript",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\eslint.config.mjs",
+      "target_id": "mod:eslint-config-next/typescript",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module eslint-config-next/typescript"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\app\\sitemap.ts:imports:mod:next",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\app\\sitemap.ts",
+      "target_id": "mod:next",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module next"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\app\\robots.ts:imports:mod:next",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\app\\robots.ts",
+      "target_id": "mod:next",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module next"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\app\\page.tsx:imports:mod:@/components/Navbar",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\app\\page.tsx",
+      "target_id": "mod:@/components/Navbar",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module @/components/Navbar"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\app\\page.tsx:imports:mod:@/components/Hero",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\app\\page.tsx",
+      "target_id": "mod:@/components/Hero",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module @/components/Hero"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\app\\page.tsx:imports:mod:@/components/StatsBar",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\app\\page.tsx",
+      "target_id": "mod:@/components/StatsBar",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module @/components/StatsBar"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\app\\page.tsx:imports:mod:@/components/About",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\app\\page.tsx",
+      "target_id": "mod:@/components/About",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module @/components/About"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\app\\page.tsx:imports:mod:@/components/Services",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\app\\page.tsx",
+      "target_id": "mod:@/components/Services",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module @/components/Services"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\app\\page.tsx:imports:mod:@/components/TechStack",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\app\\page.tsx",
+      "target_id": "mod:@/components/TechStack",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module @/components/TechStack"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\app\\page.tsx:imports:mod:@/components/Process",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\app\\page.tsx",
+      "target_id": "mod:@/components/Process",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module @/components/Process"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\app\\page.tsx:imports:mod:@/components/Portfolio",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\app\\page.tsx",
+      "target_id": "mod:@/components/Portfolio",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module @/components/Portfolio"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\app\\page.tsx:imports:mod:@/components/Testimonials",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\app\\page.tsx",
+      "target_id": "mod:@/components/Testimonials",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module @/components/Testimonials"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\app\\page.tsx:imports:mod:@/components/CTA",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\app\\page.tsx",
+      "target_id": "mod:@/components/CTA",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module @/components/CTA"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\app\\page.tsx:imports:mod:@/components/Footer",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\app\\page.tsx",
+      "target_id": "mod:@/components/Footer",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module @/components/Footer"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\app\\page.tsx:imports:mod:@/components/InteractiveTerminal",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\app\\page.tsx",
+      "target_id": "mod:@/components/InteractiveTerminal",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module @/components/InteractiveTerminal"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\app\\layout.tsx:imports:mod:next",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\app\\layout.tsx",
+      "target_id": "mod:next",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module next"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\app\\layout.tsx:imports:mod:next/font/google",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\app\\layout.tsx",
+      "target_id": "mod:next/font/google",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module next/font/google"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\app\\layout.tsx:imports:mod:./globals.css",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\app\\layout.tsx",
+      "target_id": "mod:./globals.css",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module ./globals.css"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\app\\layout.tsx:imports:mod:@/context/LanguageContext",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\app\\layout.tsx",
+      "target_id": "mod:@/context/LanguageContext",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module @/context/LanguageContext"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\app\\api\\contact\\route.ts:imports:mod:nodemailer",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\app\\api\\contact\\route.ts",
+      "target_id": "mod:nodemailer",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module nodemailer"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\app\\api\\contact\\route.ts:exposes:fn:D:\\Project Code\\Hoodtech\\src\\app\\api\\contact\\route.ts:POST",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\app\\api\\contact\\route.ts",
+      "target_id": "fn:D:\\Project Code\\Hoodtech\\src\\app\\api\\contact\\route.ts:POST",
+      "type": "EXPOSES",
+      "weight": 1
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\Navbar.tsx:imports:mod:next/link",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\Navbar.tsx",
+      "target_id": "mod:next/link",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module next/link"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\Navbar.tsx:imports:mod:next/image",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\Navbar.tsx",
+      "target_id": "mod:next/image",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module next/image"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\Navbar.tsx:imports:mod:@/context/LanguageContext",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\Navbar.tsx",
+      "target_id": "mod:@/context/LanguageContext",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module @/context/LanguageContext"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\Footer.tsx:imports:mod:next/link",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\Footer.tsx",
+      "target_id": "mod:next/link",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module next/link"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\Footer.tsx:imports:mod:next/image",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\Footer.tsx",
+      "target_id": "mod:next/image",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module next/image"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\Footer.tsx:imports:mod:@/context/LanguageContext",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\Footer.tsx",
+      "target_id": "mod:@/context/LanguageContext",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module @/context/LanguageContext"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\Process.tsx:imports:mod:framer-motion",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\Process.tsx",
+      "target_id": "mod:framer-motion",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module framer-motion"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\Process.tsx:imports:mod:@/context/LanguageContext",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\Process.tsx",
+      "target_id": "mod:@/context/LanguageContext",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module @/context/LanguageContext"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx:imports:mod:framer-motion",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx",
+      "target_id": "mod:framer-motion",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module framer-motion"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx:imports:mod:next/link",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx",
+      "target_id": "mod:next/link",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module next/link"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx:imports:mod:lucide-react",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx",
+      "target_id": "mod:lucide-react",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module lucide-react"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx:imports:mod:react",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx",
+      "target_id": "mod:react",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module react"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx:imports:mod:@/context/LanguageContext",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx",
+      "target_id": "mod:@/context/LanguageContext",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module @/context/LanguageContext"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx:exposes:fn:D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx:TerminalAnimation",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx",
+      "target_id": "fn:D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx:TerminalAnimation",
+      "type": "EXPOSES",
+      "weight": 1
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx:exposes:fn:D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx:sleep",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx",
+      "target_id": "fn:D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx:sleep",
+      "type": "EXPOSES",
+      "weight": 1
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx:exposes:fn:D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx:prefix",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx",
+      "target_id": "fn:D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx:prefix",
+      "type": "EXPOSES",
+      "weight": 1
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx:exposes:fn:D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx:loop",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx",
+      "target_id": "fn:D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx:loop",
+      "type": "EXPOSES",
+      "weight": 1
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\Services.tsx:imports:mod:framer-motion",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\Services.tsx",
+      "target_id": "mod:framer-motion",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module framer-motion"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\InteractiveTerminal.tsx:imports:mod:react",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\InteractiveTerminal.tsx",
+      "target_id": "mod:react",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module react"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\InteractiveTerminal.tsx:imports:mod:lucide-react",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\InteractiveTerminal.tsx",
+      "target_id": "mod:lucide-react",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module lucide-react"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\InteractiveTerminal.tsx:imports:mod:framer-motion",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\InteractiveTerminal.tsx",
+      "target_id": "mod:framer-motion",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module framer-motion"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\InteractiveTerminal.tsx:exposes:fn:D:\\Project Code\\Hoodtech\\src\\components\\InteractiveTerminal.tsx:handleCommand",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\InteractiveTerminal.tsx",
+      "target_id": "fn:D:\\Project Code\\Hoodtech\\src\\components\\InteractiveTerminal.tsx:handleCommand",
+      "type": "EXPOSES",
+      "weight": 1
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\InteractiveTerminal.tsx:exposes:fn:D:\\Project Code\\Hoodtech\\src\\components\\InteractiveTerminal.tsx:onSubmit",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\InteractiveTerminal.tsx",
+      "target_id": "fn:D:\\Project Code\\Hoodtech\\src\\components\\InteractiveTerminal.tsx:onSubmit",
+      "type": "EXPOSES",
+      "weight": 1
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\TechStack.tsx:imports:mod:framer-motion",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\TechStack.tsx",
+      "target_id": "mod:framer-motion",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module framer-motion"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\TechStack.tsx:imports:mod:react-icons/si",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\TechStack.tsx",
+      "target_id": "mod:react-icons/si",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module react-icons/si"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\TechStack.tsx:imports:mod:react-icons/fa",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\TechStack.tsx",
+      "target_id": "mod:react-icons/fa",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module react-icons/fa"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\Testimonials.tsx:imports:mod:framer-motion",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\Testimonials.tsx",
+      "target_id": "mod:framer-motion",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module framer-motion"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\Testimonials.tsx:imports:mod:@/context/LanguageContext",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\Testimonials.tsx",
+      "target_id": "mod:@/context/LanguageContext",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module @/context/LanguageContext"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\lib\\utils.ts:imports:mod:clsx",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\lib\\utils.ts",
+      "target_id": "mod:clsx",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module clsx"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\lib\\utils.ts:imports:mod:tailwind-merge",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\lib\\utils.ts",
+      "target_id": "mod:tailwind-merge",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module tailwind-merge"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\lib\\utils.ts:exposes:fn:D:\\Project Code\\Hoodtech\\src\\lib\\utils.ts:cn",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\lib\\utils.ts",
+      "target_id": "fn:D:\\Project Code\\Hoodtech\\src\\lib\\utils.ts:cn",
+      "type": "EXPOSES",
+      "weight": 1
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\About.tsx:imports:mod:react",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\About.tsx",
+      "target_id": "mod:react",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module react"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\About.tsx:imports:mod:framer-motion",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\About.tsx",
+      "target_id": "mod:framer-motion",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module framer-motion"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\About.tsx:imports:mod:lucide-react",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\About.tsx",
+      "target_id": "mod:lucide-react",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module lucide-react"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\About.tsx:imports:mod:next/image",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\About.tsx",
+      "target_id": "mod:next/image",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module next/image"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\About.tsx:imports:mod:@/context/LanguageContext",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\About.tsx",
+      "target_id": "mod:@/context/LanguageContext",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module @/context/LanguageContext"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\About.tsx:imports:mod:./img/MuhammadNurilHuda.jpg",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\About.tsx",
+      "target_id": "mod:./img/MuhammadNurilHuda.jpg",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module ./img/MuhammadNurilHuda.jpg"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx:imports:mod:react",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx",
+      "target_id": "mod:react",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module react"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx:exposes:class:D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx:LanguageContextType",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx",
+      "target_id": "class:D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx:LanguageContextType",
+      "type": "EXPOSES",
+      "weight": 1
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx:exposes:fn:D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx:LanguageProvider",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx",
+      "target_id": "fn:D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx:LanguageProvider",
+      "type": "EXPOSES",
+      "weight": 1
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx:exposes:fn:D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx:toggleLang",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx",
+      "target_id": "fn:D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx:toggleLang",
+      "type": "EXPOSES",
+      "weight": 1
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx:exposes:fn:D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx:t",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx",
+      "target_id": "fn:D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx:t",
+      "type": "EXPOSES",
+      "weight": 1
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx:exposes:fn:D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx:useLanguage",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx",
+      "target_id": "fn:D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx:useLanguage",
+      "type": "EXPOSES",
+      "weight": 1
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\CTA.tsx:imports:mod:framer-motion",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\CTA.tsx",
+      "target_id": "mod:framer-motion",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module framer-motion"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\CTA.tsx:imports:mod:lucide-react",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\CTA.tsx",
+      "target_id": "mod:lucide-react",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module lucide-react"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\CTA.tsx:imports:mod:react",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\CTA.tsx",
+      "target_id": "mod:react",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module react"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\CTA.tsx:imports:mod:react-icons/fa",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\CTA.tsx",
+      "target_id": "mod:react-icons/fa",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module react-icons/fa"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\CTA.tsx:imports:mod:@/context/LanguageContext",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\CTA.tsx",
+      "target_id": "mod:@/context/LanguageContext",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module @/context/LanguageContext"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\CTA.tsx:exposes:fn:D:\\Project Code\\Hoodtech\\src\\components\\CTA.tsx:handleChange",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\CTA.tsx",
+      "target_id": "fn:D:\\Project Code\\Hoodtech\\src\\components\\CTA.tsx:handleChange",
+      "type": "EXPOSES",
+      "weight": 1
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\CTA.tsx:exposes:fn:D:\\Project Code\\Hoodtech\\src\\components\\CTA.tsx:handleSubmit",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\CTA.tsx",
+      "target_id": "fn:D:\\Project Code\\Hoodtech\\src\\components\\CTA.tsx:handleSubmit",
+      "type": "EXPOSES",
+      "weight": 1
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\Portfolio.tsx:imports:mod:framer-motion",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\Portfolio.tsx",
+      "target_id": "mod:framer-motion",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module framer-motion"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\Portfolio.tsx:imports:mod:lucide-react",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\Portfolio.tsx",
+      "target_id": "mod:lucide-react",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module lucide-react"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\Portfolio.tsx:imports:mod:next/link",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\Portfolio.tsx",
+      "target_id": "mod:next/link",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module next/link"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\Portfolio.tsx:imports:mod:react",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\Portfolio.tsx",
+      "target_id": "mod:react",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module react"
+    },
+    {
+      "id": "e:file:D:\\Project Code\\Hoodtech\\src\\components\\Portfolio.tsx:imports:mod:@/context/LanguageContext",
+      "source_id": "file:D:\\Project Code\\Hoodtech\\src\\components\\Portfolio.tsx",
+      "target_id": "mod:@/context/LanguageContext",
+      "type": "IMPORTS",
+      "weight": 1,
+      "description": "Imports module @/context/LanguageContext"
+    }
+  ],
+  "updated_at": "2026-08-05T16:10:59.7139524+07:00"
+}

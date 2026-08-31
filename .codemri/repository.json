@@ -1,0 +1,48 @@
+{
+  "platform": "CodeMRI Neural Repository Intelligence",
+  "version": "v1.0.0",
+  "codename": "MRI",
+  "scanned_root": "D:\\Project Code\\Hoodtech",
+  "timestamp": "2026-08-05T16:10:59.7350673+07:00",
+  "status": "V1_0_0_MRI_COMPLETE (SQLite NRG + Technical Debt \u0026 Intelligence Engine Active)",
+  "total_files": 44,
+  "total_bytes": 8441775,
+  "total_loc": 2192,
+  "total_comments": 46,
+  "total_blank": 223,
+  "graph_node_count": 41,
+  "graph_edge_count": 80,
+  "language_stats": {
+    "css": {
+      "file_count": 1,
+      "lines": 1,
+      "percentage": 0.04
+    },
+    "javascript": {
+      "file_count": 5,
+      "lines": 75,
+      "percentage": 3.05
+    },
+    "json": {
+      "file_count": 3,
+      "lines": 3,
+      "percentage": 0.12
+    },
+    "markdown": {
+      "file_count": 3,
+      "lines": 3,
+      "percentage": 0.12
+    },
+    "typescript": {
+      "file_count": 21,
+      "lines": 2368,
+      "percentage": 96.22
+    },
+    "unknown": {
+      "file_count": 11,
+      "lines": 11,
+      "percentage": 0.45
+    }
+  },
+  "scan_duration_sec": 0.013
+}

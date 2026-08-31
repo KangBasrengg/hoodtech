@@ -158,7 +158,7 @@ export const dictionary = {
   }
 };
 
-type DictionaryKey = keyof typeof dictionary["id"];
+export type DictionaryKey = keyof typeof dictionary["id"];
 
 interface LanguageContextType {
   lang: Language;

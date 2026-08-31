@@ -101,7 +101,7 @@ export default function About() {
             </h3>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-12 md:gap-24">
-            
+
             <div className="flex items-center gap-5 group cursor-pointer" onClick={() => setShowNurilCV(true)}>
               <div className="w-24 h-24 md:w-28 md:h-28 rounded-xl overflow-hidden bg-bg-secondary border border-border-subtle shrink-0 relative glitch-hover">
                 <Image src={nurilImg} alt="Muh. Nuril" fill className="object-cover grayscale group-hover:grayscale-0 transition-all duration-300" unoptimized />
@@ -117,7 +117,7 @@ export default function About() {
                 </a>
               </div>
             </div>
-            
+
             <div className="flex items-center gap-5 group cursor-pointer">
               <div className="w-24 h-24 md:w-28 md:h-28 rounded-xl overflow-hidden bg-bg-secondary border border-border-subtle shrink-0 relative glitch-hover">
                 {/* Note: User please place ilmi.jpg in public folder */}

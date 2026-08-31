@@ -193,11 +193,11 @@ export default function CTA() {
                           className="bg-bg-secondary border border-border-subtle rounded-md h-11 px-4 text-fg-primary text-sm font-mono focus:outline-none focus:border-brand transition-colors appearance-none cursor-pointer"
                         >
                           <option value="">{t("cta_select_default")}</option>
-                          <option value={t("budget_1") as any}>{t("budget_1")}</option>
-                          <option value={t("budget_2") as any}>{t("budget_2")}</option>
-                          <option value={t("budget_3") as any}>{t("budget_3")}</option>
-                          <option value={t("budget_4") as any}>{t("budget_4")}</option>
-                          <option value={t("budget_5") as any}>{t("budget_5")}</option>
+                          <option value={t("budget_1")}>{t("budget_1")}</option>
+                          <option value={t("budget_2")}>{t("budget_2")}</option>
+                          <option value={t("budget_3")}>{t("budget_3")}</option>
+                          <option value={t("budget_4")}>{t("budget_4")}</option>
+                          <option value={t("budget_5")}>{t("budget_5")}</option>
                         </select>
                       </div>
                     </div>

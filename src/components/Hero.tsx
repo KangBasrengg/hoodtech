@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import { useState, useEffect, useCallback, useRef } from "react";
 import { useLanguage } from "@/context/LanguageContext";
+import { scrollToSection } from "@/lib/scroll";
 
 // ── Terminal typing animation ──────────────────────────────────────
 type TermLine =
@@ -258,18 +259,26 @@ export default function Hero() {
           </motion.div>
 
           <motion.div variants={itemVariants} className="flex flex-wrap items-center gap-4 mt-4">
-            <Link
+            <a
               href="#contact"
-              className="inline-flex h-12 items-center justify-center bg-brand text-bg-primary px-6 font-bold hover:bg-brand-dark transition-colors"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection("contact");
+              }}
+              className="inline-flex h-12 items-center justify-center bg-brand text-bg-primary px-6 font-bold hover:bg-brand-dark transition-colors cursor-pointer"
             >
               $ start-a-project <ChevronRight className="ml-2 w-4 h-4" />
-            </Link>
-            <Link
+            </a>
+            <a
               href="#work"
-              className="inline-flex h-12 items-center justify-center border border-border-subtle bg-bg-secondary px-6 text-fg-primary hover:border-brand/50 transition-colors"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection("work");
+              }}
+              className="inline-flex h-12 items-center justify-center border border-border-subtle bg-bg-secondary px-6 text-fg-primary hover:border-brand/50 transition-colors cursor-pointer"
             >
               view ./portfolio
-            </Link>
+            </a>
           </motion.div>
         </motion.div>
 

@@ -205,9 +205,8 @@ export default function InteractiveTerminal() {
 
             {/* Body */}
             <div
-              className="flex-1 p-4 overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:bg-brand/20 [&::-webkit-scrollbar-track]:bg-transparent hover:[&::-webkit-scrollbar-thumb]:bg-brand/40"
+              className="flex-1 p-4 overflow-y-auto glow-brand-text [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:bg-brand/20 [&::-webkit-scrollbar-track]:bg-transparent hover:[&::-webkit-scrollbar-thumb]:bg-brand/40"
               onClick={() => inputRef.current?.focus()}
-              style={{ textShadow: "0 0 5px rgba(0, 255, 102, 0.3)" }}
             >
               <div className="flex flex-col gap-1.5">
                 {history.map((line, i) => (

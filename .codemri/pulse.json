@@ -1,0 +1,166 @@
+{
+  "version": "v0.4.0",
+  "codename": "Pulse",
+  "analyzed_at": "2026-08-05T16:10:59.7355855+07:00",
+  "execution_time_ms": 0,
+  "health": {
+    "overall_score": 81,
+    "grade": "B",
+    "debt_status": "Healthy Quality (Moderate Structural Debt)",
+    "comment_ratio": 2.1,
+    "dead_code_rate": 26.8,
+    "circular_count": 0,
+    "suggestions": [
+      "📝 Documentation Gap: Current comment ratio is low (2.1%). Consider enriching complex functions with Go/TS docstrings for team velocity.",
+      "💡 Clean Code \u0026 Footprint: Detected 11 isolated symbols with zero incoming calls (26.8% dead code rate). Review and archive unused boilerplate."
+    ]
+  },
+  "dead_code_issues": [
+    {
+      "node_id": "fn:D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx:sleep",
+      "name": "sleep",
+      "type": "FUNCTION",
+      "path": "D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx",
+      "start_line": 69,
+      "end_line": 69,
+      "reason": "Private/Internal symbol receives 0 incoming calls within the scanned workspace."
+    },
+    {
+      "node_id": "fn:D:\\Project Code\\Hoodtech\\src\\components\\InteractiveTerminal.tsx:handleCommand",
+      "name": "handleCommand",
+      "type": "FUNCTION",
+      "path": "D:\\Project Code\\Hoodtech\\src\\components\\InteractiveTerminal.tsx",
+      "start_line": 54,
+      "end_line": 54,
+      "reason": "Private/Internal symbol receives 0 incoming calls within the scanned workspace."
+    },
+    {
+      "node_id": "fn:D:\\Project Code\\Hoodtech\\src\\components\\InteractiveTerminal.tsx:onSubmit",
+      "name": "onSubmit",
+      "type": "FUNCTION",
+      "path": "D:\\Project Code\\Hoodtech\\src\\components\\InteractiveTerminal.tsx",
+      "start_line": 157,
+      "end_line": 157,
+      "reason": "Private/Internal symbol receives 0 incoming calls within the scanned workspace."
+    },
+    {
+      "node_id": "fn:D:\\Project Code\\Hoodtech\\src\\components\\CTA.tsx:handleSubmit",
+      "name": "handleSubmit",
+      "type": "FUNCTION",
+      "path": "D:\\Project Code\\Hoodtech\\src\\components\\CTA.tsx",
+      "start_line": 31,
+      "end_line": 31,
+      "reason": "Private/Internal symbol receives 0 incoming calls within the scanned workspace."
+    },
+    {
+      "node_id": "fn:D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx:loop",
+      "name": "loop",
+      "type": "FUNCTION",
+      "path": "D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx",
+      "start_line": 188,
+      "end_line": 188,
+      "reason": "Private/Internal symbol receives 0 incoming calls within the scanned workspace."
+    },
+    {
+      "node_id": "fn:D:\\Project Code\\Hoodtech\\src\\lib\\utils.ts:cn",
+      "name": "cn",
+      "type": "FUNCTION",
+      "path": "D:\\Project Code\\Hoodtech\\src\\lib\\utils.ts",
+      "start_line": 4,
+      "end_line": 4,
+      "reason": "Private/Internal symbol receives 0 incoming calls within the scanned workspace."
+    },
+    {
+      "node_id": "fn:D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx:useLanguage",
+      "name": "useLanguage",
+      "type": "FUNCTION",
+      "path": "D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx",
+      "start_line": 187,
+      "end_line": 187,
+      "reason": "Private/Internal symbol receives 0 incoming calls within the scanned workspace."
+    },
+    {
+      "node_id": "fn:D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx:prefix",
+      "name": "prefix",
+      "type": "FUNCTION",
+      "path": "D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx",
+      "start_line": 87,
+      "end_line": 87,
+      "reason": "Private/Internal symbol receives 0 incoming calls within the scanned workspace."
+    },
+    {
+      "node_id": "fn:D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx:toggleLang",
+      "name": "toggleLang",
+      "type": "FUNCTION",
+      "path": "D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx",
+      "start_line": 172,
+      "end_line": 172,
+      "reason": "Private/Internal symbol receives 0 incoming calls within the scanned workspace."
+    },
+    {
+      "node_id": "fn:D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx:t",
+      "name": "t",
+      "type": "FUNCTION",
+      "path": "D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx",
+      "start_line": 176,
+      "end_line": 176,
+      "reason": "Private/Internal symbol receives 0 incoming calls within the scanned workspace."
+    },
+    {
+      "node_id": "fn:D:\\Project Code\\Hoodtech\\src\\components\\CTA.tsx:handleChange",
+      "name": "handleChange",
+      "type": "FUNCTION",
+      "path": "D:\\Project Code\\Hoodtech\\src\\components\\CTA.tsx",
+      "start_line": 25,
+      "end_line": 25,
+      "reason": "Private/Internal symbol receives 0 incoming calls within the scanned workspace."
+    }
+  ],
+  "circular_dependencies": null,
+  "complexity_metrics": [
+    {
+      "target_id": "PATH_D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx",
+      "path": "D:\\Project Code\\Hoodtech\\src\\components\\Hero.tsx",
+      "symbol_count": 4,
+      "score": 24.3,
+      "rating": "Moderate (Healthy Structure)"
+    },
+    {
+      "target_id": "PATH_D:\\Project Code\\Hoodtech\\src\\components\\CTA.tsx",
+      "path": "D:\\Project Code\\Hoodtech\\src\\components\\CTA.tsx",
+      "symbol_count": 2,
+      "score": 20.3,
+      "rating": "Moderate (Healthy Structure)"
+    },
+    {
+      "target_id": "PATH_D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx",
+      "path": "D:\\Project Code\\Hoodtech\\src\\context\\LanguageContext.tsx",
+      "symbol_count": 5,
+      "score": 19.5,
+      "rating": "Moderate (Healthy Structure)"
+    },
+    {
+      "target_id": "PATH_D:\\Project Code\\Hoodtech\\src\\components\\InteractiveTerminal.tsx",
+      "path": "D:\\Project Code\\Hoodtech\\src\\components\\InteractiveTerminal.tsx",
+      "symbol_count": 2,
+      "score": 15.3,
+      "rating": "Moderate (Healthy Structure)"
+    },
+    {
+      "target_id": "PATH_D:\\Project Code\\Hoodtech\\src\\app\\api\\contact\\route.ts",
+      "path": "D:\\Project Code\\Hoodtech\\src\\app\\api\\contact\\route.ts",
+      "symbol_count": 1,
+      "score": 5.9,
+      "rating": "Low (Clean \u0026 Maintainable)"
+    },
+    {
+      "target_id": "PATH_D:\\Project Code\\Hoodtech\\src\\lib\\utils.ts",
+      "path": "D:\\Project Code\\Hoodtech\\src\\lib\\utils.ts",
+      "symbol_count": 1,
+      "score": 5.3,
+      "rating": "Low (Clean \u0026 Maintainable)"
+    }
+  ],
+  "total_symbols_analyzed": 41,
+  "total_edges_analyzed": 80
+}

@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ExternalLink, ChevronLeft, ChevronRight, Pause, Play } from "lucide-react";
 import Link from "next/link";
 import { useState, useEffect, useCallback } from "react";
-import { useLanguage } from "@/context/LanguageContext";
+import { useLanguage, DictionaryKey } from "@/context/LanguageContext";
 
 const projects = [
   {
@@ -149,21 +149,21 @@ export default function Portfolio() {
                         {project.title}
                       </h3>
                       <p className="text-fg-muted leading-relaxed mb-6">
-                        {t(`proj_${current + 1}_desc` as any)}
+                        {t(`proj_${current + 1}_desc` as DictionaryKey)}
                       </p>
 
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                         <div className="bg-bg-primary border border-border-subtle p-3 rounded-md">
                           <div className="text-xs text-brand font-mono mb-1">{"<Problem />"}</div>
-                          <div className="text-sm text-fg-muted leading-relaxed">{t(`proj_${current + 1}_prob` as any)}</div>
+                          <div className="text-sm text-fg-muted leading-relaxed">{t(`proj_${current + 1}_prob` as DictionaryKey)}</div>
                         </div>
                         <div className="bg-bg-primary border border-border-subtle p-3 rounded-md">
                           <div className="text-xs text-brand font-mono mb-1">{"<Solution />"}</div>
-                          <div className="text-sm text-fg-muted leading-relaxed">{t(`proj_${current + 1}_sol` as any)}</div>
+                          <div className="text-sm text-fg-muted leading-relaxed">{t(`proj_${current + 1}_sol` as DictionaryKey)}</div>
                         </div>
                         <div className="bg-bg-primary border border-border-subtle p-3 rounded-md md:col-span-2">
                           <div className="text-xs text-brand font-mono mb-1">{"<Impact />"}</div>
-                          <div className="text-sm text-fg-primary leading-relaxed">{t(`proj_${current + 1}_imp` as any)}</div>
+                          <div className="text-sm text-fg-primary leading-relaxed">{t(`proj_${current + 1}_imp` as DictionaryKey)}</div>
                         </div>
                       </div>
 
