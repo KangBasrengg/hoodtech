@@ -1,43 +1,46 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useLanguage, DictionaryKey } from "@/context/LanguageContext";
 
 export default function Services() {
-  const services = [
+  const { t } = useLanguage();
+
+  const services: Array<{ id: string; name: string; descKey: DictionaryKey; status: "running" | "idle" }> = [
     {
       id: "webDevelopment",
       name: "webDevelopment()",
-      desc: "Custom web applications using modern stacks like React, Next.js, and Vue.",
+      descKey: "serv_web_desc",
       status: "running",
     },
     {
       id: "backendAPI",
       name: "backendAPI()",
-      desc: "Robust, scalable backend architectures with Node.js, Go, or Python.",
+      descKey: "serv_backend_desc",
       status: "running",
     },
     {
       id: "mobileApp",
       name: "mobileApp()",
-      desc: "Cross-platform mobile applications using React Native or Flutter.",
+      descKey: "serv_mobile_desc",
       status: "idle",
     },
     {
       id: "devOpsCloud",
       name: "devOpsCloud()",
-      desc: "Cloud infrastructure setup, CI/CD pipelines, and server management.",
+      descKey: "serv_devops_desc",
       status: "running",
     },
     {
       id: "uiUxDesign",
       name: "uiUxDesign()",
-      desc: "User-centric interface design and prototyping via Figma.",
+      descKey: "serv_uiux_desc",
       status: "idle",
     },
     {
       id: "maintenance",
       name: "maintenance()",
-      desc: "Ongoing support, bug fixes, and feature enhancements for your apps.",
+      descKey: "serv_maint_desc",
       status: "running",
     },
   ];
@@ -60,7 +63,7 @@ export default function Services() {
       <div className="max-w-7xl mx-auto">
         <div className="mb-12">
           <span className="text-brand font-medium block mb-2">$ cat services.json</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-fg-primary">What we build</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-fg-primary">{t("services_heading")}</h2>
         </div>
 
         <motion.div
@@ -86,7 +89,7 @@ export default function Services() {
                 </div>
               </div>
               <p className="text-fg-muted text-sm leading-relaxed">
-                {service.desc}
+                {t(service.descKey)}
               </p>
               <div className="mt-6 text-xs text-border-subtle select-none">
                 {"{"} ... {"}"}

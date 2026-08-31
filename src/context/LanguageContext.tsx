@@ -49,6 +49,15 @@ export const dictionary = {
     about_check_4: "Kolaborasi yang transparan dan komunikasi yang responsif.",
     about_founders_heading: "siapa dibalik Hoodtech?",
 
+    // Services
+    services_heading: "Apa yang kami bangun",
+    serv_web_desc: "Aplikasi web kustom menggunakan tech stack modern seperti React, Next.js, dan Vue.",
+    serv_backend_desc: "Arsitektur backend yang tangguh dan scalable dengan Node.js, Go, atau Python.",
+    serv_mobile_desc: "Aplikasi mobile lintas platform (iOS & Android) menggunakan React Native atau Flutter.",
+    serv_devops_desc: "Konfigurasi infrastruktur cloud, pipeline CI/CD, dan manajemen server.",
+    serv_uiux_desc: "Desain antarmuka berorientasi pengguna dan pengujian prototipe via Figma.",
+    serv_maint_desc: "Dukungan berkelanjutan, pembenahan bug, dan peningkatan fitur aplikasi Anda.",
+
     // Process
     process_heading: "Alur kerja kami",
 
@@ -123,6 +132,15 @@ export const dictionary = {
     about_check_3: "Intuitive and user-centric interface (UI/UX) design.",
     about_check_4: "Transparent collaboration and responsive communication.",
     about_founders_heading: "who is behind Hoodtech?",
+
+    // Services
+    services_heading: "What we build",
+    serv_web_desc: "Custom web applications using modern stacks like React, Next.js, and Vue.",
+    serv_backend_desc: "Robust, scalable backend architectures with Node.js, Go, or Python.",
+    serv_mobile_desc: "Cross-platform mobile applications using React Native or Flutter.",
+    serv_devops_desc: "Cloud infrastructure setup, CI/CD pipelines, and server management.",
+    serv_uiux_desc: "User-centric interface design and prototyping via Figma.",
+    serv_maint_desc: "Ongoing support, bug fixes, and feature enhancements for your apps.",
 
     // Process
     process_heading: "Our workflow",

@@ -26,8 +26,8 @@ export async function POST(request: Request) {
 
     // Compose email
     const mailOptions = {
-      from: `"Hoodtech Contact Form" <${process.env.SMTP_USER}>`,
-      to: process.env.CONTACT_TO,
+      from: `"Hoodtech Contact Form" <${process.env.SMTP_USER || "noreply@hoodtech.my.id"}>`,
+      to: process.env.CONTACT_TO || "admin@hoodtech.my.id",
       replyTo: email,
       subject: `[Hoodtech] Pesan Baru dari ${name}`,
       html: `
