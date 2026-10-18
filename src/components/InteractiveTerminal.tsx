@@ -18,8 +18,11 @@ export default function InteractiveTerminal() {
   const inputRef = useRef<HTMLInputElement>(null);
   const bottomRef = useRef<HTMLDivElement>(null);
 
+  const hasBootedRef = useRef(false);
+
   useEffect(() => {
-    if (isOpen && history.length === 0) {
+    if (isOpen && !hasBootedRef.current) {
+      hasBootedRef.current = true;
       setIsBooting(true);
       // Simulate Boot Sequence
       const bootSequence = [
@@ -40,12 +43,12 @@ export default function InteractiveTerminal() {
           setIsBooting(false);
           inputRef.current?.focus();
         }
-      }, 300);
+      }, 250);
       return () => clearInterval(interval);
     } else if (isOpen && !isBooting) {
       inputRef.current?.focus();
     }
-  }, [isOpen]);
+  }, [isOpen, isBooting]);
 
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });

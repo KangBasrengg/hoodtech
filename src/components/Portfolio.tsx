@@ -30,6 +30,15 @@ const projects: ProjectItem[] = [
     demo: "https://konsultan-ai.com",
   },
   {
+    title: "AI Interview Platform",
+    desc: "Arsitektur sistem AI Interview Platform berskala enterprise dengan komunikasi real-time WebSocket, background queue Redis & Sidekiq, serta CI/CD Quality Gate otomatis.",
+    problem: "Platform AI real-time membutuhkan latensi ultra-rendah dan proses background job yang tangguh agar evaluasi wawancara tidak bottleneck saat beban traffic tinggi.",
+    solution: "Merancang arsitektur monorepo split-service (Rails API + React Vite), mengoptimalkan worker Redis/Sidekiq, serta menerapkan pipeline CI release gate yang ketat.",
+    impact: "Meraih 100% green test suite, mengeliminasi defect kritis P0/P1, dan memastikan kestabilan koneksi WebSocket antar-service.",
+    tags: ["Ruby on Rails", "React", "Redis", "WebSocket"],
+    github: "https://github.com/KangBasrengg/nuril-platform-engineering",
+  },
+  {
     title: "CP-ReactGo",
     desc: "Website company profile modern berkonsep Liquid Glass UI (iOS style) yang ringan dan responsif berbasis React 19 dan TypeScript.",
     problem: "Banyak website profil perusahaan memiliki tampilan kaku, generik, dan lambat saat memuat komponen antarmuka yang interaktif.",
