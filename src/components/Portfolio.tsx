@@ -2,19 +2,41 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import { ExternalLink, ChevronLeft, ChevronRight, Pause, Play } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
 import Link from "next/link";
 import { useState, useEffect, useCallback } from "react";
 import { useLanguage, DictionaryKey } from "@/context/LanguageContext";
 
-const projects = [
+interface ProjectItem {
+  title: string;
+  desc: string;
+  problem: string;
+  solution: string;
+  impact: string;
+  tags: string[];
+  github: string;
+  demo?: string;
+}
+
+const projects: ProjectItem[] = [
   {
     title: "konsultan-ai.com",
-    desc: "Platform SaaS AI Legal-Tech untuk otomatisasi dokumen hukum dan konsultasi instan berbasis kecerdasan buatan.",
-    problem: "Proses konsultasi hukum tradisional memakan waktu lama dan biaya mahal, sehingga sulit dijangkau oleh UMKM dan masyarakat umum.",
-    solution: "Membangun sistem AI Legal Assistant dengan RAG (Retrieval-Augmented Generation) khusus hukum Indonesia.",
-    impact: "Mempercepat draf dokumen 5x lebih cepat dan menurunkan biaya konsultasi awal hingga 80%.",
-    tags: ["Next.js", "TypeScript", "Tailwind", "OpenAI"],
-    link: "https://konsultan-ai.com",
+    desc: "Platform SaaS AI Legal-Tech unggulan untuk otomatisasi dokumen hukum dan konsultasi instan berbasis OpenAI API, terintegrasi Midtrans Payment Gateway dan Supabase.",
+    problem: "Konsultasi hukum konvensional berbiaya mahal dan lambat, serta kebutuhan integrasi sistem pembayaran langganan dan pembuatan dokumen hukum yang aman.",
+    solution: "Mengintegrasikan OpenAI API dengan RAG khusus KUHP Indonesia, sistem checkout otomatis Midtrans Payment Gateway, serta arsitektur cloud Supabase.",
+    impact: "Mempercepat draf dokumen hukum 5x lebih cepat, memproses transaksi langganan otomatis, dan memangkas biaya konsultasi awal hingga 80%.",
+    tags: ["Next.js", "OpenAI", "Midtrans", "Supabase"],
+    github: "https://github.com/KangBasrengg/KonsultanAI",
+    demo: "https://konsultan-ai.com",
+  },
+  {
+    title: "CP-ReactGo",
+    desc: "Website company profile modern berkonsep Liquid Glass UI (iOS style) yang ringan dan responsif berbasis React 19 dan TypeScript.",
+    problem: "Banyak website profil perusahaan memiliki tampilan kaku, generik, dan lambat saat memuat komponen antarmuka yang interaktif.",
+    solution: "Merancang arsitektur Vite + TypeScript dengan micro-animation halus dan estetika Liquid Glass untuk pengalaman visual yang memukau.",
+    impact: "Mencapai performa sub-detik (Lighthouse 99+) serta memberikan impresi modern dan kredibel untuk branding korporat.",
+    tags: ["React", "TypeScript", "Vite", "Tailwind"],
+    github: "https://github.com/KangBasrengg/CP-ReactGo",
   },
   {
     title: "CodeMRI",
@@ -23,7 +45,8 @@ const projects = [
     solution: "Membuat parser pintar yang memetakan file dependency dan merendernya dalam grafik interaktif 2D/3D.",
     impact: "Mengurangi waktu onboarding developer baru pada codebase raksasa hingga 40%.",
     tags: ["Next.js", "TypeScript", "D3.js", "AI"],
-    link: "https://codemri.vercel.app/",
+    github: "https://github.com/KangBasrengg/MRI-Code",
+    demo: "https://codemri.vercel.app/",
   },
   {
     title: "FinTrack",
@@ -32,7 +55,36 @@ const projects = [
     solution: "Merancang UI minimalis dengan input kilat (quick-entry) dan visualisasi data yang mudah dipahami sekilas.",
     impact: "Meningkatkan retensi pengguna harian sebesar 65% berkat UX yang ringan dan cepat.",
     tags: ["React", "Vite", "Node.js", "MongoDB"],
-    link: "https://fintrack-tau-mocha.vercel.app/",
+    github: "https://github.com/KangBasrengg/FinTrack",
+    demo: "https://fintrack-tau-mocha.vercel.app/",
+  },
+  {
+    title: "KasirPOS.exe",
+    desc: "Aplikasi Point of Sale minimarket multi-komputer kasir dengan arsitektur LAN client-server dan sinkronisasi data real-time.",
+    problem: "Antrian kasir panjang saat jam sibuk dan minimnya sistem POS yang bisa sinkronisasi multi-PC tanpa koneksi internet luar.",
+    solution: "Membangun sistem client-server lokal menggunakan FastAPI server dan aplikasi desktop client (.exe) yang otomatis tersinkron via LAN.",
+    impact: "Memungkinkan operasional multi-kasir simultan bebas biaya langganan cloud dan kebal terhadap gangguan koneksi internet.",
+    tags: ["Python", "FastAPI", "SQLite", "Desktop"],
+    github: "https://github.com/KangBasrengg/KasirPOS.exe",
+  },
+  {
+    title: "TokoKas (KasirSantri)",
+    desc: "Sistem POS terpadu One Backend, Two Frontends (React web admin + Flutter mobile kasir) untuk pengelolaan toko modern.",
+    problem: "Pemilik toko kesulitan menyinkronkan stok barang gudang dengan kasir penjualan secara real-time dan transparan.",
+    solution: "Mengembangkan backend terpusat Node.js/PostgreSQL dengan dashboard web analitik dan aplikasi kasir mobile praktis.",
+    impact: "Memangkas selisih stok fisik hingga 90% dan mempermudah pemantauan omzet penjualan kapan saja.",
+    tags: ["React", "Node.js", "PostgreSQL", "Flutter"],
+    github: "https://github.com/KangBasrengg/KasirSantriAPK",
+    demo: "https://kasir-santri-apk.vercel.app/",
+  },
+  {
+    title: "Smart Time Management",
+    desc: "Aplikasi produktivitas & smart scheduler iOS native dengan calendar multi-view, task prioritas, dan deteksi konflik jadwal otomatis.",
+    problem: "Jadwal harian, to-do list, dan janji temu klien sering terpisah di banyak aplikasi hingga memicu jadwal bentrok.",
+    solution: "Membangun aplikasi native iOS berbasis SwiftUI dengan fitur smart insight untuk mendeteksi konflik waktu dan integrasi meeting klien.",
+    impact: "Meningkatkan efisiensi manajemen agenda harian dan mengeliminasi risiko pertemuan tumpang tindih.",
+    tags: ["SwiftUI", "iOS", "Productivity"],
+    github: "https://github.com/KangBasrengg/SmartTimeManagement.ipa",
   },
   {
     title: "AI House Design Generator",
@@ -41,7 +93,8 @@ const projects = [
     solution: "Mengintegrasikan model AI generatif yang mampu mengubah prompt teks menjadi sketsa denah 2D yang presisi.",
     impact: "Ribuan denah berhasil di-generate per bulan, membantu calon pemilik rumah memvisualisasikan ide mereka secara instan.",
     tags: ["Next.js", "AI", "Canvas", "Tailwind"],
-    link: "https://ai-house-design-generator.vercel.app/",
+    github: "https://github.com/KangBasrengg/AI-House-Design-Generator",
+    demo: "https://ai-house-design-generator.vercel.app/",
   },
 ];
 
@@ -178,15 +231,29 @@ export default function Portfolio() {
                         ))}
                       </div>
 
-                      <Link
-                        href={project.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex h-11 items-center justify-center gap-2 bg-brand text-bg-primary px-6 font-bold rounded-md hover:bg-brand-dark transition-colors text-sm"
-                      >
-                        <ExternalLink size={16} />
-                        {t("portfolio_live_demo")}
-                      </Link>
+                      <div className="flex flex-wrap items-center gap-3">
+                        <Link
+                          href={project.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex h-11 items-center justify-center gap-2 bg-brand text-bg-primary px-6 font-bold rounded-md hover:bg-brand-dark transition-colors text-sm"
+                        >
+                          <FaGithub size={17} />
+                          {t("portfolio_view_repo")}
+                        </Link>
+
+                        {project.demo && (
+                          <Link
+                            href={project.demo}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex h-11 items-center justify-center gap-2 border border-border-subtle bg-bg-primary text-fg-primary px-5 font-medium rounded-md hover:border-brand/50 hover:text-brand transition-colors text-sm"
+                          >
+                            <ExternalLink size={15} />
+                            {t("portfolio_live_demo")}
+                          </Link>
+                        )}
+                      </div>
                     </div>
 
                     {/* Right: Terminal Preview */}
@@ -198,40 +265,34 @@ export default function Portfolio() {
                       </div>
                       <div className="p-4 text-xs font-mono text-fg-muted flex flex-col gap-1.5 flex-1 bg-bg-primary/50">
                         <div>
-                          <span className="text-brand">$</span> curl{" "}
+                          <span className="text-brand">$</span> git clone{" "}
                           <span className="text-fg-primary break-all">
-                            {project.link.replace("https://", "")}
+                            {project.github.replace("https://github.com/", "")}.git
                           </span>
                         </div>
                         <div className="mt-2">
+                          <span className="text-brand">✔</span> Repository:{" "}
+                          <span className="text-brand">Public</span>
+                        </div>
+                        <div>
+                          <span className="text-brand">✔</span> Branch:{" "}
+                          <span className="text-fg-primary">main</span>
+                        </div>
+                        <div>
                           <span className="text-brand">✔</span> Status:{" "}
-                          <span className="text-brand">200 OK</span>
-                        </div>
-                        <div>
-                          <span className="text-brand">✔</span> Response:{" "}
                           <span className="text-fg-primary">
-                            &lt;html&gt;...
+                            {project.demo ? "Deployed" : "Source Code"}
                           </span>
-                        </div>
-                        <div>
-                          <span className="text-brand">✔</span> Server:{" "}
-                          <span className="text-fg-primary">Edge Network</span>
                         </div>
                         <div className="mt-2 pt-2 border-t border-border-subtle/50">
                           <span className="text-yellow-500">ℹ</span> Stack:{" "}
                           <span className="text-fg-primary">{project.tags.slice(0, 2).join(", ")}</span>
                         </div>
                         <div className="mt-2">
-                          <span className="text-brand">$</span> npm run analyze
+                          <span className="text-brand">$</span> git log -1 --format="%s"
                         </div>
-                        <div>
-                          <span className="text-brand">✔</span> Performance: <span className="text-brand">98/100</span>
-                        </div>
-                        <div>
-                          <span className="text-brand">✔</span> SEO: <span className="text-brand">100/100</span>
-                        </div>
-                        <div>
-                          <span className="text-brand">✔</span> Accessibility: <span className="text-brand">100/100</span>
+                        <div className="truncate text-fg-primary">
+                          <span className="text-brand">✔</span> latest release
                         </div>
                         <div className="mt-auto pt-4 text-brand flex items-center gap-2">
                           hoodtech@dev:~$ <span className="w-1.5 h-3 bg-brand animate-pulse" />
