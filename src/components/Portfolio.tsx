@@ -39,6 +39,15 @@ const projects: ProjectItem[] = [
     github: "https://github.com/KangBasrengg/nuril-platform-engineering",
   },
   {
+    title: "DownNux Manager",
+    desc: "Aplikasi download accelerator modern lintas platform berbasis arsitektur daemon terisolasi, dynamic chunking hingga 32 segmen, dan persistensi SQLite WAL.",
+    problem: "Download bawaan browser sering lambat, terbatas satu koneksi, serta unduhan rentan rusak dan gagal di-resume saat jaringan putus atau sistem restart.",
+    solution: "Membangun download engine background daemon independen dengan antarmuka Tauri & React, visualizer chunk 32 koneksi, serta SQLite WAL atomic progress recovery.",
+    impact: "Meningkatkan kecepatan unduh signifikan dengan multi-threading, menjamin pemulihan unduhan tanpa file corrupt, dan unduhan tetap aktif saat GUI ditutup.",
+    tags: ["Tauri", "Rust", "React", "TypeScript"],
+    github: "https://github.com/Nuril09/DownNux-Manager",
+  },
+  {
     title: "CP-ReactGo",
     desc: "Website company profile modern berkonsep Liquid Glass UI (iOS style) yang ringan dan responsif berbasis React 19 dan TypeScript.",
     problem: "Banyak website profil perusahaan memiliki tampilan kaku, generik, dan lambat saat memuat komponen antarmuka yang interaktif.",
@@ -114,6 +123,20 @@ export default function Portfolio() {
   const [current, setCurrent] = useState(0);
   const [direction, setDirection] = useState(1); // 1 = next, -1 = prev
   const [isPaused, setIsPaused] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      const p = params.get("project");
+      if (p !== null) {
+        const idx = parseInt(p, 10);
+        if (!isNaN(idx) && idx >= 0 && idx < projects.length) {
+          setCurrent(idx);
+          setIsPaused(true);
+        }
+      }
+    }
+  }, []);
 
   const goTo = useCallback(
     (index: number, dir: number) => {

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { createContext, useContext, useState, ReactNode } from "react";
+import React, { createContext, useContext, useState, useEffect, ReactNode } from "react";
 
 type Language = "id" | "en";
 
@@ -79,34 +79,38 @@ export const dictionary = {
     proj_2_prob: "Platform AI real-time membutuhkan latensi ultra-rendah dan proses background job yang tangguh agar evaluasi wawancara tidak bottleneck saat beban traffic tinggi.",
     proj_2_sol: "Merancang arsitektur monorepo split-service (Rails API + React Vite), mengoptimalkan worker Redis/Sidekiq, serta menerapkan pipeline CI release gate yang ketat.",
     proj_2_imp: "Meraih 100% green test suite, mengeliminasi defect kritis P0/P1, dan memastikan kestabilan koneksi WebSocket antar-service.",
-    proj_3_desc: "Website company profile modern berkonsep Liquid Glass UI (iOS style) yang ringan dan responsif berbasis React 19 dan TypeScript.",
-    proj_3_prob: "Banyak website profil perusahaan memiliki tampilan kaku, generik, dan lambat saat memuat komponen antarmuka yang interaktif.",
-    proj_3_sol: "Merancang arsitektur Vite + TypeScript dengan micro-animation halus dan estetika Liquid Glass untuk pengalaman visual yang memukau.",
-    proj_3_imp: "Mencapai performa sub-detik (Lighthouse 99+) serta memberikan impresi modern dan kredibel untuk branding korporat.",
-    proj_4_desc: "Tools Repository Analyzer — analisis mendalam terhadap arsitektur, dependensi, dan kesehatan codebase Anda secara visual.",
-    proj_4_prob: "Developer sering kesulitan memahami arsitektur legacy code atau codebase baru yang sangat besar.",
-    proj_4_sol: "Membuat parser pintar yang memetakan file dependency dan merendernya dalam grafik interaktif 2D/3D.",
-    proj_4_imp: "Mengurangi waktu onboarding developer baru pada codebase raksasa hingga 40%.",
-    proj_5_desc: "Web app pencatatan keuangan pribadi — tracking income & outcome harian dengan dashboard analitik yang intuitif.",
-    proj_5_prob: "Aplikasi keuangan yang ada terlalu kompleks, membuat user malas mencatat pengeluaran harian.",
-    proj_5_sol: "Merancang UI minimalis dengan input kilat (quick-entry) dan visualisasi data yang mudah dipahami sekilas.",
-    proj_5_imp: "Meningkatkan retensi pengguna harian sebesar 65% berkat UX yang ringan dan cepat.",
-    proj_6_desc: "Aplikasi Point of Sale minimarket multi-komputer kasir dengan arsitektur LAN client-server dan sinkronisasi data real-time.",
-    proj_6_prob: "Antrian kasir panjang saat jam sibuk dan minimnya sistem POS yang bisa sinkronisasi multi-PC tanpa koneksi internet luar.",
-    proj_6_sol: "Membangun sistem client-server lokal menggunakan FastAPI server dan aplikasi desktop client (.exe) yang otomatis tersinkron via LAN.",
-    proj_6_imp: "Memungkinkan operasional multi-kasir simultan bebas biaya langganan cloud dan kebal terhadap gangguan koneksi internet.",
-    proj_7_desc: "Sistem POS terpadu One Backend, Two Frontends (React web admin + Flutter mobile kasir) untuk pengelolaan toko modern.",
-    proj_7_prob: "Pemilik toko kesulitan menyinkronkan stok barang gudang dengan kasir penjualan secara real-time dan transparan.",
-    proj_7_sol: "Mengembangkan backend terpusat Node.js/PostgreSQL dengan dashboard web analitik dan aplikasi kasir mobile praktis.",
-    proj_7_imp: "Memangkas selisih stok fisik hingga 90% dan mempermudah pemantauan omzet penjualan kapan saja.",
-    proj_8_desc: "Aplikasi produktivitas & smart scheduler iOS native dengan calendar multi-view, task prioritas, dan deteksi konflik jadwal otomatis.",
-    proj_8_prob: "Jadwal harian, to-do list, dan janji temu klien sering terpisah di banyak aplikasi hingga memicu jadwal bentrok.",
-    proj_8_sol: "Membangun aplikasi native iOS berbasis SwiftUI dengan fitur smart insight untuk mendeteksi konflik waktu dan integrasi meeting klien.",
-    proj_8_imp: "Meningkatkan efisiensi manajemen agenda harian dan mengeliminasi risiko pertemuan tumpang tindih.",
-    proj_9_desc: "Web app untuk membuat layout denah rumah secara 2D menggunakan AI — generate desain rumah impian Anda dalam hitungan detik.",
-    proj_9_prob: "Menyewa arsitek untuk sekadar melihat rancangan awal denah rumah terlalu mahal bagi banyak orang.",
-    proj_9_sol: "Mengintegrasikan model AI generatif yang mampu mengubah prompt teks menjadi sketsa denah 2D yang presisi.",
-    proj_9_imp: "Ribuan denah berhasil di-generate per bulan, membantu calon pemilik rumah memvisualisasikan ide mereka secara instan.",
+    proj_3_desc: "Aplikasi download accelerator modern lintas platform berbasis arsitektur daemon terisolasi, dynamic chunking hingga 32 segmen, dan persistensi SQLite WAL.",
+    proj_3_prob: "Download bawaan browser sering lambat, terbatas satu koneksi, serta unduhan rentan rusak dan gagal di-resume saat jaringan putus atau sistem restart.",
+    proj_3_sol: "Membangun download engine background daemon independen dengan antarmuka Tauri & React, visualizer chunk 32 koneksi, serta SQLite WAL atomic progress recovery.",
+    proj_3_imp: "Meningkatkan kecepatan unduh signifikan dengan multi-threading, menjamin pemulihan unduhan tanpa file corrupt, dan proses unduh tetap berjalan saat GUI ditutup.",
+    proj_4_desc: "Website company profile modern berkonsep Liquid Glass UI (iOS style) yang ringan dan responsif berbasis React 19 dan TypeScript.",
+    proj_4_prob: "Banyak website profil perusahaan memiliki tampilan kaku, generik, dan lambat saat memuat komponen antarmuka yang interaktif.",
+    proj_4_sol: "Merancang arsitektur Vite + TypeScript dengan micro-animation halus dan estetika Liquid Glass untuk pengalaman visual yang memukau.",
+    proj_4_imp: "Mencapai performa sub-detik (Lighthouse 99+) serta memberikan impresi modern dan kredibel untuk branding korporat.",
+    proj_5_desc: "Tools Repository Analyzer — analisis mendalam terhadap arsitektur, dependensi, dan kesehatan codebase Anda secara visual.",
+    proj_5_prob: "Developer sering kesulitan memahami arsitektur legacy code atau codebase baru yang sangat besar.",
+    proj_5_sol: "Membuat parser pintar yang memetakan file dependency dan merendernya dalam grafik interaktif 2D/3D.",
+    proj_5_imp: "Mengurangi waktu onboarding developer baru pada codebase raksasa hingga 40%.",
+    proj_6_desc: "Web app pencatatan keuangan pribadi — tracking income & outcome harian dengan dashboard analitik yang intuitif.",
+    proj_6_prob: "Aplikasi keuangan yang ada terlalu kompleks, membuat user malas mencatat pengeluaran harian.",
+    proj_6_sol: "Merancang UI minimalis dengan input kilat (quick-entry) dan visualisasi data yang mudah dipahami sekilas.",
+    proj_6_imp: "Meningkatkan retensi pengguna harian sebesar 65% berkat UX yang ringan dan cepat.",
+    proj_7_desc: "Aplikasi Point of Sale minimarket multi-komputer kasir dengan arsitektur LAN client-server dan sinkronisasi data real-time.",
+    proj_7_prob: "Antrian kasir panjang saat jam sibuk dan minimnya sistem POS yang bisa sinkronisasi multi-PC tanpa koneksi internet luar.",
+    proj_7_sol: "Membangun sistem client-server lokal menggunakan FastAPI server dan aplikasi desktop client (.exe) yang otomatis tersinkron via LAN.",
+    proj_7_imp: "Memungkinkan operasional multi-kasir simultan bebas biaya langganan cloud dan kebal terhadap gangguan koneksi internet.",
+    proj_8_desc: "Sistem POS terpadu One Backend, Two Frontends (React web admin + Flutter mobile kasir) untuk pengelolaan toko modern.",
+    proj_8_prob: "Pemilik toko kesulitan menyinkronkan stok barang gudang dengan kasir penjualan secara real-time dan transparan.",
+    proj_8_sol: "Mengembangkan backend terpusat Node.js/PostgreSQL dengan dashboard web analitik dan aplikasi kasir mobile praktis.",
+    proj_8_imp: "Memangkas selisih stok fisik hingga 90% dan mempermudah pemantauan omzet penjualan kapan saja.",
+    proj_9_desc: "Aplikasi produktivitas & smart scheduler iOS native dengan calendar multi-view, task prioritas, dan deteksi konflik jadwal otomatis.",
+    proj_9_prob: "Jadwal harian, to-do list, dan janji temu klien sering terpisah di banyak aplikasi hingga memicu jadwal bentrok.",
+    proj_9_sol: "Membangun aplikasi native iOS berbasis SwiftUI dengan fitur smart insight untuk mendeteksi konflik waktu dan integrasi meeting klien.",
+    proj_9_imp: "Meningkatkan efisiensi manajemen agenda harian dan mengeliminasi risiko pertemuan tumpang tindih.",
+    proj_10_desc: "Web app untuk membuat layout denah rumah secara 2D menggunakan AI — generate desain rumah impian Anda dalam hitungan detik.",
+    proj_10_prob: "Menyewa arsitek untuk sekadar melihat rancangan awal denah rumah terlalu mahal bagi banyak orang.",
+    proj_10_sol: "Mengintegrasikan model AI generatif yang mampu mengubah prompt teks menjadi sketsa denah 2D yang presisi.",
+    proj_10_imp: "Ribuan denah berhasil di-generate per bulan, membantu calon pemilik rumah memvisualisasikan ide mereka secara instan.",
 
     // Footer
     footer_desc: "Kami menulis kode. Kami merilis produk. Kami menskalakan startup. Digital agency yang berbasis di Semarang, Indonesia dengan spesialisasi pada aplikasi web dan mobile yang scalable.",
@@ -184,34 +188,38 @@ export const dictionary = {
     proj_2_prob: "Real-time AI platforms require ultra-low latency and resilient background queues to prevent evaluation bottlenecks under high traffic loads.",
     proj_2_sol: "Architected a split-service monorepo (Rails API + React Vite), optimized Redis/Sidekiq workers, and enforced strict CI workflow release gates.",
     proj_2_imp: "Achieved a 100% green test suite, eliminated critical P0/P1 defects, and ensured rock-solid cross-service WebSocket connectivity.",
-    proj_3_desc: "Modern company profile website featuring a sleek Liquid Glass UI (iOS style), powered by React 19, TypeScript, and Vite.",
-    proj_3_prob: "Traditional corporate sites often look rigid and suffer from sluggish render times with interactive elements.",
-    proj_3_sol: "Built a lightweight Vite + TypeScript architecture with smooth micro-interactions and contemporary glassmorphism styling.",
-    proj_3_imp: "Achieved sub-second load times (Lighthouse 99+) with a polished first impression for enterprise branding.",
-    proj_4_desc: "Repository Analyzer Tool — visual deep analysis of your architecture, dependencies, and codebase health.",
-    proj_4_prob: "Developers often struggle to understand legacy architecture or massive new codebases.",
-    proj_4_sol: "Created a smart parser that maps file dependencies and renders them in an interactive 2D/3D graph.",
-    proj_4_imp: "Reduces new developer onboarding time on giant codebases by up to 40%.",
-    proj_5_desc: "Personal finance tracking web app — daily income & outcome tracking with an intuitive analytics dashboard.",
-    proj_5_prob: "Existing financial apps are too complex, making users lazy to log daily expenses.",
-    proj_5_sol: "Designed a minimalist UI with quick-entry input and easily digestible data visualization.",
-    proj_5_imp: "Increased daily user retention by 65% thanks to lightweight and fast UX.",
-    proj_6_desc: "Multi-terminal minimarket Point of Sale application featuring local LAN client-server architecture with real-time sync.",
-    proj_6_prob: "Long checkout lines during peak hours and lack of local POS solutions supporting multi-register sync without internet.",
-    proj_6_sol: "Built a local client-server architecture with FastAPI server and desktop (.exe) clients synchronizing seamlessly across the local network.",
-    proj_6_imp: "Enables simultaneous multi-lane checkout without cloud recurring costs or reliance on internet uptime.",
-    proj_7_desc: "Unified POS system with One Backend, Two Frontends (React web admin + Flutter mobile register) for retail store management.",
-    proj_7_prob: "Store owners struggle to synchronize warehouse inventory with cashier checkouts in real-time.",
-    proj_7_sol: "Engineered a centralized Node.js/PostgreSQL backend with an analytics web dashboard and responsive mobile register app.",
-    proj_7_imp: "Reduced inventory discrepancies by up to 90% and enabled real-time revenue monitoring from anywhere.",
-    proj_8_desc: "Native iOS productivity and smart scheduler app featuring multi-view calendar, prioritized tasks, and automatic schedule conflict detection.",
-    proj_8_prob: "Daily tasks, to-do lists, and client meetings are fragmented across multiple apps, leading to schedule overlaps.",
-    proj_8_sol: "Developed a native SwiftUI iOS app equipped with smart insights to flag conflicts and organize client meeting outcomes.",
-    proj_8_imp: "Streamlined daily scheduling efficiency and eliminated double-booking risks.",
-    proj_9_desc: "Web app to create 2D house floor plan layouts using AI — generate your dream house design in seconds.",
-    proj_9_prob: "Hiring an architect just to see an initial floor plan draft is too expensive for many people.",
-    proj_9_sol: "Integrated a generative AI model capable of turning text prompts into precise 2D floor plan sketches.",
-    proj_9_imp: "Thousands of floor plans generated per month, helping future homeowners visualize their ideas instantly.",
+    proj_3_desc: "Modern cross-platform download accelerator built with a decoupled daemon architecture, dynamic 32-segment multi-connection chunking, and SQLite WAL persistence.",
+    proj_3_prob: "Default browser downloads suffer from single-stream limits, frequent timeouts on large files, and lack resilience against unexpected system crashes.",
+    proj_3_sol: "Engineered a standalone background daemon service paired with a Tauri/React frontend, 32-segment dynamic Range chunk visualizer, and SQLite WAL atomic recovery.",
+    proj_3_imp: "Dramatically accelerates download throughput via multi-threading, guarantees zero-corruption recovery across reboots, and keeps transfers active even if the GUI is closed.",
+    proj_4_desc: "Modern company profile website featuring a sleek Liquid Glass UI (iOS style), powered by React 19, TypeScript, and Vite.",
+    proj_4_prob: "Traditional corporate sites often look rigid and suffer from sluggish render times with interactive elements.",
+    proj_4_sol: "Built a lightweight Vite + TypeScript architecture with smooth micro-interactions and contemporary glassmorphism styling.",
+    proj_4_imp: "Achieved sub-second load times (Lighthouse 99+) with a polished first impression for enterprise branding.",
+    proj_5_desc: "Repository Analyzer Tool — visual deep analysis of your architecture, dependencies, and codebase health.",
+    proj_5_prob: "Developers often struggle to understand legacy architecture or massive new codebases.",
+    proj_5_sol: "Created a smart parser that maps file dependencies and renders them in an interactive 2D/3D graph.",
+    proj_5_imp: "Reduces new developer onboarding time on giant codebases by up to 40%.",
+    proj_6_desc: "Personal finance tracking web app — daily income & outcome tracking with an intuitive analytics dashboard.",
+    proj_6_prob: "Existing financial apps are too complex, making users lazy to log daily expenses.",
+    proj_6_sol: "Designed a minimalist UI with quick-entry input and easily digestible data visualization.",
+    proj_6_imp: "Increased daily user retention by 65% thanks to lightweight and fast UX.",
+    proj_7_desc: "Multi-terminal minimarket Point of Sale application featuring local LAN client-server architecture with real-time sync.",
+    proj_7_prob: "Long checkout lines during peak hours and lack of local POS solutions supporting multi-register sync without internet.",
+    proj_7_sol: "Built a local client-server architecture with FastAPI server and desktop (.exe) clients synchronizing seamlessly across the local network.",
+    proj_7_imp: "Enables simultaneous multi-lane checkout without cloud recurring costs or reliance on internet uptime.",
+    proj_8_desc: "Unified POS system with One Backend, Two Frontends (React web admin + Flutter mobile register) for retail store management.",
+    proj_8_prob: "Store owners struggle to synchronize warehouse inventory with cashier checkouts in real-time.",
+    proj_8_sol: "Engineered a centralized Node.js/PostgreSQL backend with an analytics web dashboard and responsive mobile register app.",
+    proj_8_imp: "Reduced inventory discrepancies by up to 90% and enabled real-time revenue monitoring from anywhere.",
+    proj_9_desc: "Native iOS productivity and smart scheduler app featuring multi-view calendar, prioritized tasks, and automatic schedule conflict detection.",
+    proj_9_prob: "Daily tasks, to-do lists, and client meetings are fragmented across multiple apps, leading to schedule overlaps.",
+    proj_9_sol: "Developed a native SwiftUI iOS app equipped with smart insights to flag conflicts and organize client meeting outcomes.",
+    proj_9_imp: "Streamlined daily scheduling efficiency and eliminated double-booking risks.",
+    proj_10_desc: "Web app to create 2D house floor plan layouts using AI — generate your dream house design in seconds.",
+    proj_10_prob: "Hiring an architect just to see an initial floor plan draft is too expensive for many people.",
+    proj_10_sol: "Integrated a generative AI model capable of turning text prompts into precise 2D floor plan sketches.",
+    proj_10_imp: "Thousands of floor plans generated per month, helping future homeowners visualize their ideas instantly.",
 
     // Footer
     footer_desc: "We write code. We ship products. We scale startups. Digital agency based in Semarang, Indonesia specializing in scalable web and mobile applications.",
@@ -230,6 +238,16 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const [lang, setLang] = useState<Language>("id");
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      const l = params.get("lang");
+      if (l === "en" || l === "id") {
+        setLang(l);
+      }
+    }
+  }, []);
 
   const toggleLang = () => {
     setLang((prev) => (prev === "id" ? "en" : "id"));
