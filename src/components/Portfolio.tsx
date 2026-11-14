@@ -46,6 +46,7 @@ const projects: ProjectItem[] = [
     impact: "Meningkatkan kecepatan unduh signifikan dengan multi-threading, menjamin pemulihan unduhan tanpa file corrupt, dan unduhan tetap aktif saat GUI ditutup.",
     tags: ["Tauri", "Rust", "React", "TypeScript"],
     github: "https://github.com/Nuril09/DownNux-Manager",
+    demo: "https://downnux-manager.vercel.app/",
   },
   {
     title: "CP-ReactGo",
